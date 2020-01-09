@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+	    
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WebAgency</title>
+		
+		<meta name="description" content="WebAgency : l'agence de tous vos projets ! Vous avez un projet web ?
+		 La WebAgency vous aide à le réaliser !">
+		<meta name="author" content="Gael Dedenis">
+		
+		<!-- .......... Meta OpenGraph ........... -->		
+		<meta property="og.type" content="website">
+        <meta property="og:title" content="WebAgency">
+        <meta property="og:url" content="https://">
+		<meta property="og:description" content="WebAgency : l'agence de tous vos projets ! Vous avez un projet web ?
+		 La WebAgency vous aide à le réaliser !">
+        <meta property="og:author" content="Gael Dedenis">
+		
+		<!-- .......... Meta Twitter Card ........ -->		
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="WebAgency">
+        <meta name="twitter:site" content="https://">
+		<meta name="twitter:description" content="WebAgency : l'agence de tous vos projets ! Vous avez un projet web ?
+		 La WebAgency vous aide à le réaliser !">
+        <meta name="twitter:creator" content="Gael Dedenis">
+		
+		<!-- ............... Css ................. -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>	
+
+    <body>
+               <!-- ........... Navigateur ............ -->	
+	    <nav id="nav-head">
+		
+		    <figure>
+			
+			    <img src="images/logo.png" alt="Logo WebAgency">
+				
+			</figure>
+			
+			<ul>
+			
+                <li>
+                    <a href="#slider-wrapper">Accueil</a>
+                </li>
+				
+                <li>
+                    <a href="#services-wrapper">Services</a>
+                </li>
+				
+                <li>
+                    <a href="#portfolio-wrapper">Portfolio</a>
+                </li>
+				
+                <li>				
+                    <a href="#contact-wrapper">Contact</a>
+                </li>
+				
+			</ul>
+			
+		</nav>
+		
+		        <!-- ............  Header ............. -->
+	    <header>
+		
+		    <div id="slider-wrapper">
+			    
+				<figure>
+				
+				    <img src="images/slider/fond1.jpg" alt="Une fille avec les mains recouvertes de peinture.">
+					
+				</figure>	
+
+    			<i class="fas fa-angle-left fa-lg"></i>
+				<i class="fas fa-angle-right fa-lg"></i>
+				
+			</div>
+			
+            <h1><strong id="webagency">WEBAGENCY</strong> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+					
+            <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+					
+            <a href="#contact-wrapper">Plus d'infos</a>
+			
+		</header>
+
+        <main>
+                 <!-- ............. Nos Services ......... -->
+            <section id="services-wrapper">
+			
+                <h2>NOS SERVICES</h2>
+					
+                <div class="item_graphismes">
+                    <span class="item_barres"></span>
+                    <span class="item_ronds"></span>
+                    <span class="item_barres"></span>						
+                </div>	
+					
+                <p>Vous retrouverez au sein de notre agence un panel complets de compétences pour votre projet web personnel !</p>				
+					
+                <figure>
+                    <img src="images/mac.png" alt="Un mac affichant une séries d'images.">
+                </figure>
+					
+                <ul>
+				
+                    <li class="services_competence">
+                        <i class="fas fa-chart-line fa-2x"><span class="item_ronds"></span><span class="item_ronds2"></span></i>
+                        <h3>Ux design</h3>
+                        <p>
+                            Création de design intuitifs avec une optimisation de l'expérience utilisateur.
+							Ainsi nous anticipons les attentes des utilisateurs de votre projet.
+                        </p>
+                    </li>
+						
+                    <li class="services_competence">
+                        <i class="fas fa-cubes fa-2x"><span class="item_ronds"></span><span class="item_ronds2"></span></i>
+                        <h3>UI design</h3>
+                        <p>
+                            Chaque éléments perceptibles comptent ... des boutons de navigations aux éléments graphiques.
+							Vos projets méritent un design épuré, une interface rélféchie et optimisée.
+                        </p>
+                    </li>
+						
+                    <li class="services_competence">
+                        <i class="fas fa-chart-pie fa-2x"><span class="item_ronds"></span><span class="item_ronds2"></span></i>
+                        <h3>SEO</h3>
+                        <p>
+                            Experts en référencement, nous vous garantirons un référencement professionnel et pertinent
+							selon votre domaine.
+                        </p>								
+                    </li>
+					
+                </ul>
+					
+			</section>
+			
+			      <!-- .................... Portfolio ........................ -->
+			<section id="portfolio-wrapper">
+			    
+				<h2>NOS PROJETS</h2>
+				
+                <div class="item_graphismes">
+				
+                    <span class="item_barres"></span>
+                    <span class="item_ronds"></span>
+                    <span class="item_barres"></span>
+					
+                </div>
+				
+				<p>
+				    Quelques uns nos projets réalisés pour nos clients.
+			    </p>
+				
+				<div id="portfolio-selecteur">
+				
+                         <!-- Menu Hidden Controls -->
+                    <input id="all" type="radio" name="projects" checked>
+                    <input id="creative" type="radio" name="projects">
+                    <input id="corporate" type="radio" name="projects">
+                    <input id="portfolio" type="radio" name="projects">
+
+                        <!-- Portfolio Visual Controls -->
+                    <nav id="menu">
+					
+                       <label id="selecteur_all" for="all">
+                            All Works
+                            <i class="fas fa-caret-down fa-2x"></i>
+                       </label>
+					   
+                       <label id="selecteur_crea" for="creative">
+                            Creative
+                            <i class="fas fa-caret-down fa-2x"></i>
+                       </label>
+					   
+                       <label id="selecteur_corpo" for="corporate">
+                            Corporate
+                            <i class="fas fa-caret-down fa-2x"></i>
+                       </label>
+					   
+                       <label id="selecteur_pf" for="portfolio">
+                            Portfolio
+                            <i class="fas fa-caret-down fa-2x"></i>
+                       </label>
+                
+				    </nav>
+					
+				</div>
+				
+				<div class="pf-projets">
+			    
+					                    <!-- Projet 1 -->
+                    <figure class="all creative">
+                        <img src="images/projets/p1.jpg" alt="Création pour un site dédié à la création de lunettes.">
+					    <figcaption>
+						    Un site de design de lunettes, créé sur mesure.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 2 -->
+                    <figure class="all creative corporate">
+                        <img src="images/projets/p2.jpg" alt="Personnalisation d'un site de chocolatier.">
+					    <figcaption>
+						    Site d'un chocolatier pour préparer pâque.
+						    <i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 3 -->
+                    <figure class="all portfolio">
+                        <img src="images/projets/p3.jpg" alt="Création d'un logo vintage.">
+					    <figcaption>
+						    Création d'un design vintage. 
+						    <i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 4 -->
+                    <figure class="all corporate">
+                        <img src="images/projets/p4.jpg" alt="Maquette de design commander pour une application de gestion de projets.">
+					    <figcaption>
+						    La gestion de projetsà son design.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 5 -->
+                    <figure class="all corporate">
+                        <img src="images/projets/p5.jpg" alt="Site de shopping de mode & chic.">
+					    <figcaption>
+						    Site de shopping de mode & chic.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 6 -->
+                    <figure class="all creative">
+                        <img src="images/projets/p6.jpg" alt="Rafraîchissement graphique d'un site de galerie d'arts.">
+					    <figcaption>
+						    Design d'un site de galerie d'arts.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 7 -->
+                    <figure class="all creative portfolio">
+						<img src="images/projets/p7.jpg" alt="Création du site web dédié à une association dédié
+						 aux fusées amateurs et semi-pro.">
+					    <figcaption>
+						    Création d'un design pour une association.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+										<!-- Projet 8 -->
+                    <figure class="all corporate">
+                        <img src="images/projets/p8.jpg" alt="Design pour une entreprise de coms.">
+					    <figcaption>
+						    Design pour une entreprise de coms.
+							<i class="fas fa-eye fa-lg"></i>
+						</figcaption>
+					</figure>
+					
+				</div>
+			
+			</section>
+		
+		</main>
+		
+           <!-- .......................... Footer ......................... -->
+            <footer id="contact-wrapper">
+            
+			    <div id="infos">
+					<h2>Contact Infos</h2>
+				
+					<address>
+						WebAgency Sas<br>
+						25 Rue d'Hauteville 75010 Paris<br>
+						<a href="tel:0102030405">
+							<span>Tel:</span> 01.02.03.04.05
+						</a>
+					</address>
+			
+				
+					<form id="ci-form-wrapper" method="post" action="traitement.php">
+				
+						<fieldset>
+							<input id ="pseudo" type="text" name="pseudo" placeholder="Name" required >
+							<input id ="mail" type="email" name="mail" placeholder="Email" required >
+							<input id ="subject" type="text" name="subject" placeholder="Subject" required >
+							<textarea id ="message" name="message" placeholder="Message" required ></textarea>
+							<br>
+							<input id="envoyer" type="submit" value="Send Message"/>
+						</fieldset>
+				
+					</form>
+                </div>
+				
+			    <div id="iframe-wrapper">
+			        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2214246080457!2d2.3476369159181343!3d48.873055307627745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1577622394506!5m2!1sfr!2sfr" width="800" height="600" allowfullscreen></iframe>
+			    </div>
+			
+		</footer>
+	</body>

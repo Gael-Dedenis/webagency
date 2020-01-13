@@ -18,8 +18,8 @@
 
 body
 {
-	width: 100%;
-	margin: 0;
+	margin: 0 auto;
+	padding: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -44,24 +44,23 @@ main
 
 #nav-head
 {
-    width: 100%;
-	height: 140px;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1000;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	align-items: center;
 }
 
 #nav-head figure
 {
-	margin-left: 10%;
+	margin: 0 auto;
+	padding-top: 1rem;
 }
 
-#nav-head ~ figure img
+#nav-head ~ img
 {
 	max-width: 100%;
 	height: auto;
@@ -70,104 +69,78 @@ main
 
 #nav-head ul
 {
-	width: 90%;
-	margin-right: 4%;
 	list-style: none;
+	width: 90%;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	margin: 0 auto;
+	padding-left: unset;
+	padding-top: 1.1rem;
 }
 
-#nav-head ul li
-{
-	width: 24px;
-}
-
-#nav-head ul li a
+#nav-head a
 {
 	text-decoration: none;
-}
-
-#nav-head ul li a:hover,
-#nav-head ul li a:focus,
-#nav-head ul li a:active
-{
-	border-top: 2px solid rgb(90,170,210);
 	padding: 4px 5px;
 }
 
+#nav-head a:hover,
+#nav-head a:focus,
+#nav-head a:active
+{
+	border-top: 2px solid rgb(90,170,210);
+}
+
      @media screen and (min-width: 576px)
-	 {		 
-		 #nav-head
-		 {
-			 flex-wrap: unset;
-			 justify-content: space-between;
-			 width: 100%; 
-		 }
-		 
+	 {	
+		
 		 #nav-head figure
-		 {
-			 width: 30%;
-			 margin-left: 9%;
+         {
+		    padding-top: unset;
+		    margin-top: 2.5rem;
 		 }
 		 
 		 #nav-head ul
 		 {
-			 width: 70%;
-			 margin-right: 2%;			 
+			width: 40%;
+			margin-top: 1.2rem; 
 		 }
-		 
-		 #nav-head ul li
+
+		 #nav-head a
 		 {
-			 min-width: 17%;
-			 margin: auto;
-		 }		 		 
+			padding: 55px 6px; 
+		 }
+
+		 #nav-head ul li a:hover,
+		 #nav-head ul li a:focus,
+		 #nav-head ul li a:active
+		 {
+			 border-top: 3px solid rgb(90,170,210);
+		 }		 
 	 }
 	 
 	     @media screen and (min-width: 992px)
 	     {			 
-             #nav-head
-             {
-				  font-size: 1.1em;
-			 }			 
-		 
 			 #nav-head figure
 			 {
-				 width: 50%;
+				  width: 30%;
+				  padding-top: unset;
+				  margin-top: 2.5rem;
 			 }
 			 
 			 #nav-head ul
 			 {
-				 margin-right: 10%;
-				 width: 45%;
-			 }
-			 
-			 #nav-head ul li
-			 {
-				 width: 25%;
-				 margin: auto;
-			 }
-			 
-			 #nav-head ul li a:hover,
-             #nav-head ul li a:focus,
-             #nav-head ul li a:active
-			 {
-				 border-top: 3px solid rgb(90,170,210);
-				 padding: 53px 6px;
-			 }			 
+				  width: 27%;
+				  margin-top: 1.2rem;
+			 }		 
 		 }
 		 
 		     @media screen and (min-width: 1200px)
-			 {
-			     #nav-head
-				 {
-					 font-size: 1.2em;
-				 }
-				 
+			 {				 
 				 #nav-head ul
-				 {
-					 margin-right: 7%;					 
-					 width: 30%;
+				 {	
+					 width: 23%;
+					 margin-right: 12rem;
 				 }
 			 }
 			 
@@ -176,35 +149,24 @@ main
 header  
 {
 	width: 100%;
-	padding-bottom: 12%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: flex-start;
+	margin-top: 8rem;
 	position: relative;
 }
 
 #slider-wrapper
 {
-	position: relative;
-	margin-top: 150px;
 	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 #slider-wrapper figure
 {
 	z-index: -10;
-	width: 100%;
+	position: relative;
 	margin: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
+	width: 100%;
 }
 
-#slider-wrapper figure img
+#slider-wrapper img
 {
 	width: 100%;
 	height: auto;
@@ -212,13 +174,13 @@ header
 }
 
 
-#slider-wrapper i.fa-angle-left,
-#slider-wrapper i.fa-angle-right
+#slider-wrapper i
 {
 	color: rgb(255,255,255);
 	position: absolute;
-	transform: translateY(210%);
-	font-size: 0.9em;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 0.85rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -244,10 +206,11 @@ header
 
 header h1
 {
-	width: 60%;
-	margin-left: 10%;
-	margin-top: 5%;
-	font-size: 1em;
+	width: 45%;
+	position: absolute;
+	left: 10%;
+	top: 5%;
+	font-size: 0.85rem;
 }
 
 h1 , header p , header a
@@ -262,38 +225,33 @@ h1 strong
 
 header p
 {
-	width: 55%;
-	margin-left: 10%;
-	margin-top: 1%;
-	font-size: 0.8em;	
+	width: 45%;
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	font-size: 0.6rem;	
 }
 
 header a
 {
 	width: 20%;
+	position: absolute;
+	left: 10%;
+	top: 75%;
 	text-align: center;
 	text-decoration: none;
-	margin-left: 10%;
-	margin-bottom: 0.5%;
-	font-size: 0.85em;
+	font-size: 0.8rem;
 	background-color: rgb(90,170,210);
 	border-bottom: 3px solid rgb(90,150,190);
-	border-radius: 2px;
+	border-radius: 3px;
 }
-
 			 
      @media screen and (min-width: 576px)
      {
-		 #slider-wrapper
-		 {
-			 margin-top: 150px;
-		 }
-		 
 		 #slider-wrapper i.fa-angle-left,
          #slider-wrapper i.fa-angle-right
 		 {
 		     font-size: 1em;
-			 transform: translateY(240%);
 		 }
 		 
          #slider-wrapper i.fa-angle-left
@@ -315,25 +273,25 @@ header a
          header h1
          {
 			 width: 33%;
-			 font-size: 1.05em;
-			 margin-top: 3%;
-			 margin-left: 13%;
+			 font-size: 1.05rem;
+			 top: 20%;
+			 left: 10%;
 		 }	
 
          header p
          {
-			 font-size: 0.85em;
-			 width: 45%;
-			 margin-top: 2%;
-			 margin-left: 13%;
+			 font-size: 0.75rem;
+			 width: 40%;
+			 top: 40%;
+			 left: 10%;
 		 }
 
          header a
          {
-			 font-size: 0.9em;
+			 font-size: 0.9rem;
 			 width: 15%;
-			 margin-top: 1%;
-			 margin-left: 13%;
+			 top: 65%;
+			 left: 10%;
 		 }		 
 		 
 	 }	 
@@ -344,7 +302,6 @@ header a
              #slider-wrapper i.fa-angle-right
 		     {
 		         font-size: 1.3em;
-				 transform: translateY(260%);
 		     }
 			 
              #slider-wrapper i.fa-angle-left
@@ -363,38 +320,31 @@ header a
 
              header h1
              {
-			     width: 23%;
-			     font-size: 1.2em;
-			     margin-top: 8%;
-				 margin-left: 15%;
+			     width: 32%;
+			     font-size: 1.3rem;
+			     top: 25%;
+				 left: 14%;
 		     }	
 
              header p
              {
-			     font-size: 1em;
-			     width: 37%;
-			     margin-top: 3%;
-				 margin-left: 15%;
+			     font-size: 0.8rem;
+			     width: 50%;
+			     top: 45%;
+				 left: 14%;
 		     }
 
              header a
              {
-			     font-size: 1.1em;
+			     font-size: 1.2rem;
 				 width: 13%;
-			     margin-top: 2%;
-				 margin-left: 15%;
+			     top: 60%;
+				 left: 14%;
 		     }			 
 		 }
 		     
 			 @media screen and (min-width: 1200px)
-			 {					 
-					 #slider-wrapper i.fa-angle-left,
-                     #slider-wrapper i.fa-angle-right
-		             {
-		                 font-size: 1.45em;
-						  transform: translateY(270%);
-		             }
-			 
+			 {							 
                      #slider-wrapper i.fa-angle-left
                      {
 			             width: 40px;
@@ -411,33 +361,34 @@ header a
 
                      header h1
                      {
-			             width: 25%;
+			             width: 27%;
 			             font-size: 1.3em;
-			             margin-top: 10%;
-				         margin-left: 15%;
+						 top: 25%;
+						 left: 15%;
 		             }	
 
                      header p
                      {
 			             font-size: 1.2em;
-			             width: 37%;
-			             margin-top: 2%;
-				         margin-left: 15%;
+			             width: 40%;
+						 top: 40%;
+						 left: 15%;
 		             }
 
                      header a
                      {
 			             font-size: 1.3em;
 						 width: 10%;
-			             margin-top: 1%;
-				         margin-left: 15%;
+						 top: 63%;
+						 left: 15%;
 		             }		     				 
-			 }
+			 } 
 			 
              /* +++++ +++++ main +++++ +++++ */
-			 
+		 
 main
 {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -449,7 +400,7 @@ main
 #services-wrapper
 {
 	width: 100%;
-	font-size: 0.8em;
+	font-size: 0.8rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -561,7 +512,7 @@ li.services_competence p
 			 #services-wrapper
 			 {
 				 margin-top: 1.5%;
-				 font-size: 1.2em;
+				 font-size: 1.2rem;
 				 flex-direction: row;
 				 flex-wrap: wrap;
 			 }
@@ -573,14 +524,14 @@ li.services_competence p
 			 
 			 #services-wrapper .item_graphismes
 			 {
-				 width: 90%;
+				 width: 30%;
 				 margin: auto;
+				 margin-bottom: 1.5rem;
 			 }
 			 
 			 #services-wrapper p
 		     {
 			     width: 90%;
-				 padding: 2%;
 				 margin: auto;
 		     }
 			 
@@ -641,12 +592,10 @@ li.services_competence p
 
 #portfolio-wrapper
 {
-	width: 98%;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 5%;
 }
 
 #portfolio-wrapper h2
@@ -663,19 +612,24 @@ li.services_competence p
 }
              /* +++++ Menu de sélection +++++ */
 			 
-#portfolio-selecteur
+#selecteur-wrapper
 {
-	width: 80%;
+	width: 100%;
+	margin: 1rem auto;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
+}
+
+#selecteur-wrapper input
+{
+	display: none;
 }
 
 #menu
 {
 	height: 20px;
-	width: 90%;
+	width: 100%;
 	margin-top: 2%;
 	margin-bottom: 3%;
 	position: relative;
@@ -687,6 +641,8 @@ li.services_competence p
 #menu label
 {
 	background-color: rgba(120,120,120,0.3);
+	min-width: 85px;
+	text-align: center;
 	padding: 10px 3px;
     position: relative;	
 }
@@ -712,13 +668,11 @@ li.services_competence p
 {
     background-color: rgb(90,170,210);
 	color: rgb(255,255,255);
-	padding: 9px;
 	border-bottom: 3px solid rgb(70,150,190);
 }
 
-#portfolio-selecteur input,
 #menu label i,
-#pf-projets
+.pf-projets figure
 {
 	display: none;
 }
@@ -740,7 +694,7 @@ li.services_competence p
 #corporate:checked ~ * #selecteur_corpo i,
 #portfolio:checked ~ * #selecteur_pf i
 {
-	display: block;
+	display: flex;
 	position: absolute;
 	top: 30px;
 	left: 37%;
@@ -759,7 +713,6 @@ li.services_competence p
 			 
 .pf-projets
 {
-	margin-top: 3%;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -783,6 +736,7 @@ li.services_competence p
 	display: none;
 	width: 100%;
 	height: 15%;
+	font-size: 0.8rem;
 	z-index: 10;
 	position: absolute;
 	bottom: 2%;
@@ -792,7 +746,7 @@ li.services_competence p
 
 .pf-projets figure:hover figcaption
 {
-	display: block flex;
+	display: flex;
     align-items: center;	
 }		 
 
@@ -801,34 +755,47 @@ li.services_competence p
 	color: rgb(255,255,255);
 	background-color: rgb(90,170,210);
 	border: 1px solid rgb(255,255,255);
-	height: 40px;
-	width: 40px;
+	height: 30px;
+	width: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	position: absolute;
     right: 5%;
-	bottom: 50%;
+	bottom: 60%;
 }
 
 	 @media screen and (min-width: 576px)
      {
+		 #portfolio-selecteur
+		 {
+			 margin: 2rem auto;
+		 }
+
+		 .pf-projets
+		 {
+			 flex-direction: row;
+		 }
+
 		 .pf-projets figure
 		 {
-			 width: 80%;
-			 margin: auto;
+			 width: 40%;
+			 margin: 0 auto;
 		 }
 		 
 		 .pf-projets figure figcaption
 		 {
-		     height: 15%;
-			 bottom: 1%;
+		     height: 30%;
+			 bottom: 2%;
 	     }
 		 
 		 .pf-projets figure figcaption i
 		 {
-			 bottom: 60%;
+			 width: 40px;
+			 height: 40px;
+			 right: 7%;
+			 bottom: 73%;
 		 }
 	 }	 
 		
@@ -836,18 +803,8 @@ li.services_competence p
 		 {
 			 .pf-projets figure
 			 {
-				 width: 40%;
-				 margin: auto;
-			 }
-			 
-			 .pf-projets figure figcaption
-			 {
-				 height: 20%;
-			 }
-			 
-			 .pf-projets figure figcaption i
-			 {
-				 bottom: 65%;
+				 width: 35%;
+				 margin: 0 auto;
 			 }
 		 }
 		 
@@ -866,7 +823,7 @@ li.services_competence p
                  .pf-projets figure figcaption i
                  {
 					 right: 3%;
-					 bottom: 55%;
+					 bottom: 60%;
 				 }				 
 			 }
 
@@ -897,8 +854,8 @@ li.services_competence p
 #infos address
 {
     text-align: center;
-    text-decoration: none;
-	padding-bottom: 10px;
+	text-decoration: none;
+	margin-bottom: 2rem;
 }
 
 #infos address a
@@ -916,14 +873,14 @@ li.services_competence p
 	width: 35%;
 	z-index:10;
 	position: absolute;
-	top: 200%;
-	left: 57%;
+	top: 20rem;
+	left: 60%;
 }
 
 #ci-form-wrapper fieldset
 {
-	border: 2px solid rgb(0,0,0);
-	background-color: rgba(255,255,255,0.9);
+	background-color: rgba(255,255,255,0.8);
+	border: unset;
 	z-index: 10;
 	width: 90%;
 	height: 270px;
@@ -931,6 +888,11 @@ li.services_competence p
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+}
+
+fieldset input:last-child
+{
+	align-self: flex-start;
 }
 
 #ci-form-wrapper input:nth-child(1),
@@ -972,24 +934,26 @@ li.services_competence p
 	min-height: 600px;
 	object-fit: contain;
 	border: 0;
-}
-			 
+}			 
      @media screen and (min-width: 576px)
 	 {
-		 
+		 footer
+         {
+           margin-top: 2rem;
+		 }
+
 		 #infos
 		 {
-			 width: 30%;
+			 width: 33%;
 			 z-index: 10;
 			 display: flex;
 			 flex-direction: column;
 			 justify-content: flex-start;
 			 align-items: center;
-             border: 2px solid rgb(0,0,0);
-             background-color: rgba(255,255,255,0.9);
+             background-color: rgba(255,255,255,0.8);
              position: absolute;
-             top: 35px;
-             right: 9%;			 
+             top: 0.7rem;
+             left: 65%;			 
 		 }
 		 
 		 #infos #ci-form-wrapper
@@ -1001,7 +965,6 @@ li.services_competence p
 		 #ci-form-wrapper fieldset
 		 {
 			 border: unset;
-			 height: 255px;
 		 }		 		 
 	 }
 	 
@@ -1010,6 +973,7 @@ li.services_competence p
 			 #infos
 			 {
 				 width: 30%;
+				 left: 69%;
 			 }
 		 }
 		 
@@ -1018,7 +982,7 @@ li.services_competence p
 				 #infos
 				 {
 				     width: 20%;
-					 right: 5%;
+					 left: 70%;
 				 }
 				 
 			     #ci-form-wrapper fieldset
@@ -1038,7 +1002,7 @@ li.services_competence p
 {
 	position: absolute;
 	left: 54px;
-    z-index: 10;			 
+    z-index: 10;
 }
 		 
 .services_competence .item_ronds2

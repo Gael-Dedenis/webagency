@@ -34,13 +34,16 @@ body
 main
 {
 	width: 100%;
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-             /* +++++ +++++ Nav Head +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++ +++++ +++++ +++++ Navigateur +++++ +++++ +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #nav-head
 {
@@ -91,61 +94,10 @@ main
 	border-top: 2px solid rgb(90,170,210);
 }
 
-     @media screen and (min-width: 576px)
-	 {	
-		
-		 #nav-head figure
-         {
-		    padding-top: unset;
-		    margin-top: 2.5rem;
-		 }
-		 
-		 #nav-head ul
-		 {
-			width: 40%;
-			margin-top: 1.2rem; 
-		 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+/* +++++ +++++ +++++ +++++ Header +++++ +++++ +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-		 #nav-head a
-		 {
-			padding: 55px 6px; 
-		 }
-
-		 #nav-head ul li a:hover,
-		 #nav-head ul li a:focus,
-		 #nav-head ul li a:active
-		 {
-			 border-top: 3px solid rgb(90,170,210);
-		 }		 
-	 }
-	 
-	     @media screen and (min-width: 992px)
-	     {			 
-			 #nav-head figure
-			 {
-				  width: 30%;
-				  padding-top: unset;
-				  margin-top: 2.5rem;
-			 }
-			 
-			 #nav-head ul
-			 {
-				  width: 27%;
-				  margin-top: 1.2rem;
-			 }		 
-		 }
-		 
-		     @media screen and (min-width: 1200px)
-			 {				 
-				 #nav-head ul
-				 {	
-					 width: 23%;
-					 margin-right: 12rem;
-				 }
-			 }
-			 
-			 /* +++++ +++++ Header +++++ +++++ */
-			 
 header  
 {
 	width: 100%;
@@ -245,157 +197,10 @@ header a
 	border-bottom: 3px solid rgb(90,150,190);
 	border-radius: 3px;
 }
-			 
-     @media screen and (min-width: 576px)
-     {
-		 #slider-wrapper i.fa-angle-left,
-         #slider-wrapper i.fa-angle-right
-		 {
-		     font-size: 1em;
-		 }
-		 
-         #slider-wrapper i.fa-angle-left
-         {
-			 width: 23px;
-			 height: 46px;
-			 border-radius: 0 92px 92px 0;
 
-		 }
-
-         #slider-wrapper i.fa-angle-right
-		 {
-			 width: 23px;
-			 height: 46px;
-			 border-radius: 92px 0 0 92px;
-			 
-		 }
-
-         header h1
-         {
-			 width: 33%;
-			 font-size: 1.05rem;
-			 top: 20%;
-			 left: 10%;
-		 }	
-
-         header p
-         {
-			 font-size: 0.75rem;
-			 width: 40%;
-			 top: 40%;
-			 left: 10%;
-		 }
-
-         header a
-         {
-			 font-size: 0.9rem;
-			 width: 15%;
-			 top: 65%;
-			 left: 10%;
-		 }		 
-		 
-	 }	 
-	 
-	     @media screen and (min-width: 992px)
-		 {
- 		     #slider-wrapper i.fa-angle-left,
-             #slider-wrapper i.fa-angle-right
-		     {
-		         font-size: 1.3em;
-		     }
-			 
-             #slider-wrapper i.fa-angle-left
-             {
-			     width: 30px;
-			     height: 60px;
-			     border-radius: 0 120px 120px 0;
-		     }
-
-             #slider-wrapper i.fa-angle-right
-		     {
-			     width: 30px;
-			     height: 60px;
-			     border-radius: 120px 0 0 120px;		 
-		     }
-
-             header h1
-             {
-			     width: 32%;
-			     font-size: 1.3rem;
-			     top: 25%;
-				 left: 14%;
-		     }	
-
-             header p
-             {
-			     font-size: 0.8rem;
-			     width: 50%;
-			     top: 45%;
-				 left: 14%;
-		     }
-
-             header a
-             {
-			     font-size: 1.2rem;
-				 width: 13%;
-			     top: 60%;
-				 left: 14%;
-		     }			 
-		 }
-		     
-			 @media screen and (min-width: 1200px)
-			 {							 
-                     #slider-wrapper i.fa-angle-left
-                     {
-			             width: 40px;
-			             height: 80px;
-			             border-radius: 0 160px 160px 0;
-		             }
-
-                     #slider-wrapper i.fa-angle-right
-		             {
-			             width: 40px;
-			             height: 80px;
-			             border-radius: 160px 0 0 160px;			 
-		             }
-
-                     header h1
-                     {
-			             width: 27%;
-			             font-size: 1.3em;
-						 top: 25%;
-						 left: 15%;
-		             }	
-
-                     header p
-                     {
-			             font-size: 1.2em;
-			             width: 40%;
-						 top: 40%;
-						 left: 15%;
-		             }
-
-                     header a
-                     {
-			             font-size: 1.3em;
-						 width: 10%;
-						 top: 63%;
-						 left: 15%;
-		             }		     				 
-			 } 
-			 
-             /* +++++ +++++ main +++++ +++++ */
-		 
-main
-{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-             /* +++++ +++++ Nos Services +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++ +++++ +++++ +++++ Nos Services +++++ +++++ +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 			 
 #services-wrapper
 {
@@ -468,127 +273,9 @@ li.services_competence p
 	text-align: center;
 }
 
-     @media screen and (min-width: 576px)
-     {
-		 #services-wrapper
-		 {
-			 margin-top: 3%;
-			 font-size: 1em;
-		 }
-		 
-		 #services-wrapper p
-		 {
-			 width: 80%;
-		 }
-		 
-		 #services-wrapper figure
-		 {
-			 display: block;
-			 width: 100%;
-			 display: flex;
-			 justify-content: center;
-		 }
-		 
-		 #services-wrapper figure img
-		 {
-			 max-width: 100%;
-			 height: auto;
-			 object-fit: contain;
-		 }
-		 
-		 #services-wrapper ul
-		 {
-			 width: 70%;
-		 }
-		 
-		 li.services_competence i
-		 {
-			 position: relative;
-		 }
-	 }
-
-         @media screen and (min-width: 992px)
-		 {
-			 #services-wrapper
-			 {
-				 margin-top: 1.5%;
-				 font-size: 1.2rem;
-				 flex-direction: row;
-				 flex-wrap: wrap;
-			 }
-			 
-			 #services-wrapper h2
-			 {
-				 width: 100%;
-			 }
-			 
-			 #services-wrapper .item_graphismes
-			 {
-				 width: 30%;
-				 margin: auto;
-				 margin-bottom: 1.5rem;
-			 }
-			 
-			 #services-wrapper p
-		     {
-			     width: 90%;
-				 margin: auto;
-		     }
-			 
-			 #services-wrapper figure
-			 {
-				 width: 35%;
-			 }
-			 
-			 #services-wrapper ul
-			 {
-				 width: 45%;
-			 }
-			 
-			 li.services_competence 
-			 {
-				 width: 100%;
-                 position: relative;
-                 display: flex;
-                 flex-direction: column;
-                 justify-content:  center;
-                 align-items: flex-start;				 
-			 }			 
-			 
-			 li.services_competence i
-			 {
-                 position: absolute;
-                 left: -40%;
-                 top: 7%;				 
-			 }
-			 
-			 li.services_competence h3
-			 {
-				 width: 80%;
-				 text-align: left;
-				 margin-left: -10%;
-			 }
-			 li.services_competence p
-			 {
-				 width: 80%;
-				 text-align: left;
-			 }
-		 }
-		 
-		     @media screen and (min-width: 1200px)
-			 {
-				 #services-wrapper figure
-				 {
-					 width: 40%;
-				 }
-				 
-				 li.services_competence i
-				 {
-					 left: -33%;
-				 }
-			 }
-		
-		     /* +++++ +++++ Portfolio +++++ +++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+/* +++++ +++++ +++++ +++++ Portfolio +++++ +++++ +++++ +++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #portfolio-wrapper
 {
@@ -610,7 +297,10 @@ li.services_competence p
 	width: 100%;
 	text-align: center;
 }
+
+             /* +++++++++++++++++++++++++++++ */
              /* +++++ Menu de sélection +++++ */
+             /* +++++++++++++++++++++++++++++ */
 			 
 #selecteur-wrapper
 {
@@ -709,7 +399,9 @@ li.services_competence p
 	display: block;
 }
 
+             /* ++++++++++++++++++++++++++++++++ */
              /* +++++ Portfolio de projets +++++ */
+             /* ++++++++++++++++++++++++++++++++ */
 			 
 .pf-projets
 {
@@ -764,70 +456,11 @@ li.services_competence p
 	position: absolute;
     right: 5%;
 	bottom: 60%;
-}
+}	 
 
-	 @media screen and (min-width: 576px)
-     {
-		 #portfolio-selecteur
-		 {
-			 margin: 2rem auto;
-		 }
-
-		 .pf-projets
-		 {
-			 flex-direction: row;
-		 }
-
-		 .pf-projets figure
-		 {
-			 width: 40%;
-			 margin: 0 auto;
-		 }
-		 
-		 .pf-projets figure figcaption
-		 {
-		     height: 30%;
-			 bottom: 2%;
-	     }
-		 
-		 .pf-projets figure figcaption i
-		 {
-			 width: 40px;
-			 height: 40px;
-			 right: 7%;
-			 bottom: 73%;
-		 }
-	 }	 
-		
-		 @media screen and (min-width: 992px)
-		 {
-			 .pf-projets figure
-			 {
-				 width: 35%;
-				 margin: 0 auto;
-			 }
-		 }
-		 
-		     @media screen and (min-width: 1200px)
-			 {
-				 .pf-projets figure
-                 {
-					 width: 23%;					 
-				 }
-				 
-				 .pf-projets figure figcaption
-				 {
-					 height: 23%;
-				 }
-				 
-                 .pf-projets figure figcaption i
-                 {
-					 right: 3%;
-					 bottom: 60%;
-				 }				 
-			 }
-
-             /* +++++ +++++ Footer / Contact +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+/* +++++ +++++ +++++ +++++ Footer / Contact +++++ +++++ +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 #contact-wrapper
 {
@@ -935,68 +568,10 @@ fieldset input:last-child
 	object-fit: contain;
 	border: 0;
 }			 
-     @media screen and (min-width: 576px)
-	 {
-		 footer
-         {
-           margin-top: 2rem;
-		 }
-
-		 #infos
-		 {
-			 width: 33%;
-			 z-index: 10;
-			 display: flex;
-			 flex-direction: column;
-			 justify-content: flex-start;
-			 align-items: center;
-             background-color: rgba(255,255,255,0.8);
-             position: absolute;
-             top: 0.7rem;
-             left: 65%;			 
-		 }
-		 
-		 #infos #ci-form-wrapper
-		 {
-			 position: unset;
-			 width: 97%;
-		 }
-		 
-		 #ci-form-wrapper fieldset
-		 {
-			 border: unset;
-		 }		 		 
-	 }
 	 
-	     @media screen and (min-width: 992px)
-		 {
-			 #infos
-			 {
-				 width: 30%;
-				 left: 69%;
-			 }
-		 }
-		 
-		     @media screen and (min-width: 1200px)
-			 {
-				 #infos
-				 {
-				     width: 20%;
-					 left: 70%;
-				 }
-				 
-			     #ci-form-wrapper fieldset
-		         {
-			         height: 360px;
-		         }
-
-                 #ci-form-wrapper textarea#message	
-                 {
-					 height: 200px;
-				 }				 
-			 }
-
-             /* +++++ +++++ Items Graphique +++++ +++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+/* +++++ +++++ +++++ +++++ Items Graphique +++++ +++++ +++++ +++++ */
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .services_competence .item_ronds
 {
@@ -1014,44 +589,507 @@ fieldset input:last-child
 	position: absolute;
 	left: 54px;			 
 }
-		 
-     @media screen and (min-width: 576px)
-     {
-		 .item_graphismes
-		 {
-			 width: 30%;
-			 display: flex;
-			 justify-content: center;
-			 align-items: center;
-		 }
-		 
-		 .item_barres
-		 {
-			 width: 13%;
-			 height: 1px;
-			 background-color: rgba(0,0,0,0.15);
-			 margin-left: 2%;
-			 margin-right: 2%;
-		 }
-		 
-		 .item_ronds
-		 {
-			 width: 10px;
-			 height: 10px;
-			 margin-left: 2%;
-			 margin-right: 2%;
-			 background-color: rgb(90,170,210);
-			 border-radius: 50%;		 
-		 }
 
-	 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++ +++++ +++++ +++++ +++++  Médias Queries  +++++ +++++ +++++ +++++ +++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-         @media screen and (min-width: 992px)
-		 {
+/* ++++++++++++++++++++++++++++  Breakpoint à 576px  ++++++++++++++++++++++++++++ */
+
+@media screen and (min-width: 576px){
+
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  Navigateur  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+
+	#nav-head figure
+	{
+	   padding-top: unset;
+	   margin-top: 2.5rem;
+	}
+	
+	#nav-head ul
+	{
+	   width: 40%;
+	   margin-top: 1.2rem; 
+	}
+
+	#nav-head a
+	{
+	   padding: 55px 6px; 
+	}
+
+	#nav-head ul li a:hover,
+	#nav-head ul li a:focus,
+	#nav-head ul li a:active
+	{
+		border-top: 3px solid rgb(90,170,210);
+	}
+	
+	/* ++++++++++++++++++++++++++++++ */
+	/* ++++++++++  Header  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++ */
+
+	#slider-wrapper i.fa-angle-left,
+	#slider-wrapper i.fa-angle-right
+	{
+		font-size: 1em;
+	}
+	
+	#slider-wrapper i.fa-angle-left
+	{
+		width: 23px;
+		height: 46px;
+		border-radius: 0 92px 92px 0;
+
+	}
+
+	#slider-wrapper i.fa-angle-right
+	{
+		width: 23px;
+		height: 46px;
+		border-radius: 92px 0 0 92px;
+		
+	}
+
+	header h1
+	{
+		width: 33%;
+		font-size: 1.05rem;
+		top: 20%;
+		left: 10%;
+	}	
+
+	header p
+	{
+		font-size: 0.75rem;
+		width: 40%;
+		top: 40%;
+		left: 10%;
+	}
+
+	header a
+	{
+		font-size: 0.9rem;
+		width: 15%;
+		top: 65%;
+		left: 10%;
+	}
+
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++ NOS SERVICES ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+
+	#services-wrapper
+	{
+		margin-top: 3%;
+		font-size: 1em;
+	}
+	
+	#services-wrapper p
+	{
+		width: 80%;
+	}
+	
+	#services-wrapper figure
+	{
+		display: block;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	#services-wrapper figure img
+	{
+		max-width: 100%;
+		height: auto;
+		object-fit: contain;
+	}
+	
+	#services-wrapper ul
+	{
+		width: 70%;
+	}
+	
+	li.services_competence i
+	{
+		position: relative;
+	}
+	
+	/* +++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  PORTFOLIO  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++++ */
+
+	#portfolio-selecteur
+	{
+		margin: 2rem auto;
+	}
+
+	.pf-projets
+	{
+		flex-direction: row;
+	}
+
+	.pf-projets figure
+	{
+		width: 40%;
+		margin: 0 auto;
+	}
+	
+	.pf-projets figure figcaption
+	{
+		height: 30%;
+		bottom: 2%;
+	}
+	
+	.pf-projets figure figcaption i
+	{
+		width: 40px;
+		height: 40px;
+		right: 7%;
+		bottom: 73%;
+	}
+	
+	/* +++++++++++++++++++++++++++++++ */
+	/* ++++++++++  CONTACT  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++ */
+
+	footer
+	{
+	  margin-top: 2rem;
+	}
+
+	#infos
+	{
+		width: 33%;
+		z-index: 10;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		background-color: rgba(255,255,255,0.8);
+		position: absolute;
+		top: 0.7rem;
+		left: 65%;			 
+	}
+	
+	#infos #ci-form-wrapper
+	{
+		position: unset;
+		width: 97%;
+	}
+	
+	#ci-form-wrapper fieldset
+	{
+		border: unset;
+	}	
+
+}
+
+/* ++++++++++++++++++++++++++++  Breakpoint à 768px  ++++++++++++++++++++++++++++ */
+
+    @media screen and (min-width: 768px){
+
+		 /* ++++++++++++++++++++++++++++++++++ */
+     	 /* ++++++++++  NAVIGATEUR  ++++++++++ */
+		 /* ++++++++++++++++++++++++++++++++++ */
+		 
+		 /* ++++++++++++++++++++++++++++++ */
+	     /* ++++++++++  HEADER  ++++++++++ */
+	     /* ++++++++++++++++++++++++++++++ */
+
+	     /* ++++++++++++++++++++++++++++++++++ */
+	     /* ++++++++++ NOS SERVICES ++++++++++ */
+		 /* ++++++++++++++++++++++++++++++++++ */
+		 
+	     /* +++++++++++++++++++++++++++++++++ */
+	     /* ++++++++++  PORTFOLIO  ++++++++++ */
+		 /* +++++++++++++++++++++++++++++++++ */
+		 
+ 	     /* +++++++++++++++++++++++++++++++ */
+	     /* ++++++++++  CONTACT  ++++++++++ */
+		 /* +++++++++++++++++++++++++++++++ */
+		 		 
+	}
+
+/* ++++++++++++++++++++++++++++  Breakpoint à 992px  ++++++++++++++++++++++++++++ */
+
+	    @media screen and (min-width: 992px){
+
+			 /* ++++++++++++++++++++++++++++++++++ */
+			 /* ++++++++++  NAVIGATEUR  ++++++++++ */
+             /* ++++++++++++++++++++++++++++++++++ */
+
+			 #nav-head figure
+			 {
+				  width: 30%;
+				  padding-top: unset;
+				  margin-top: 2.5rem;
+			 }
 			 
-		 }	
-
-             @media screen and (min-width: 1200px)
+			 #nav-head ul
+			 {
+				  width: 27%;
+				  margin-top: 1.2rem;
+			 }
+			 
+			 /* ++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  HEADER  ++++++++++ */
+			 /* ++++++++++++++++++++++++++++++ */
+			 
+			 #slider-wrapper i.fa-angle-left,
+             #slider-wrapper i.fa-angle-right
+		     {
+		         font-size: 1.3em;
+		     }
+			 
+             #slider-wrapper i.fa-angle-left
              {
-				 
+			     width: 30px;
+			     height: 60px;
+			     border-radius: 0 120px 120px 0;
+		     }
+
+             #slider-wrapper i.fa-angle-right
+		     {
+			     width: 30px;
+			     height: 60px;
+			     border-radius: 120px 0 0 120px;		 
+		     }
+
+             header h1
+             {
+			     width: 32%;
+			     font-size: 1.3rem;
+			     top: 25%;
+				 left: 14%;
+		     }	
+
+             header p
+             {
+			     font-size: 0.8rem;
+			     width: 50%;
+			     top: 45%;
+				 left: 14%;
+		     }
+
+             header a
+             {
+			     font-size: 1.2rem;
+				 width: 13%;
+			     top: 60%;
+				 left: 14%;
+			 }
+			 
+			 /* ++++++++++++++++++++++++++++++++++ */
+	         /* ++++++++++ NOS SERVICES ++++++++++ */
+			 /* ++++++++++++++++++++++++++++++++++ */
+			 
+			 #services-wrapper
+			 {
+				 margin-top: 1.5%;
+				 font-size: 1.2rem;
+				 flex-direction: row;
+				 flex-wrap: wrap;
+			 }
+			 
+			 #services-wrapper h2
+			 {
+				 width: 100%;
+			 }
+			 
+			 #services-wrapper .item_graphismes
+			 {
+				 width: 30%;
+				 margin: auto;
+				 margin-bottom: 1.5rem;
+			 }
+			 
+			 #services-wrapper p
+		     {
+			     width: 90%;
+				 margin: auto;
+		     }
+			 
+			 #services-wrapper figure
+			 {
+				 width: 35%;
+			 }
+			 
+			 #services-wrapper ul
+			 {
+				 width: 45%;
+			 }
+			 
+			 li.services_competence 
+			 {
+				 width: 100%;
+                 position: relative;
+                 display: flex;
+                 flex-direction: column;
+                 justify-content:  center;
+                 align-items: flex-start;				 
 			 }			 
+			 
+			 li.services_competence i
+			 {
+                 position: absolute;
+                 left: -40%;
+                 top: 7%;				 
+			 }
+			 
+			 li.services_competence h3
+			 {
+				 width: 80%;
+				 text-align: left;
+				 margin-left: -10%;
+			 }
+			 li.services_competence p
+			 {
+				 width: 80%;
+				 text-align: left;
+			 }
+
+			 /* +++++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  PORTFOLIO  ++++++++++ */
+			 /* +++++++++++++++++++++++++++++++++ */
+			 
+			 .pf-projets figure
+			 {
+				 width: 35%;
+				 margin: 0 auto;
+			 }
+			 
+		 	 /* +++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  CONTACT  ++++++++++ */
+			 /* +++++++++++++++++++++++++++++++ */
+			 
+			 #infos
+			 {
+				 width: 30%;
+				 left: 69%;
+			 }			 
+		}
+
+/* ++++++++++++++++++++++++++++  Breakpoint à 1200px  ++++++++++++++++++++++++++++ */
+
+		    @media screen and (min-width: 1200px){
+
+			 /* ++++++++++++++++++++++++++++++++++ */
+			 /* ++++++++++  NAVIGATEUR  ++++++++++ */
+			 /* ++++++++++++++++++++++++++++++++++ */
+			 
+			 #nav-head ul
+			 {	
+				 width: 23%;
+				 margin-right: 12rem;
+			 }	
+	
+			 /* ++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  HEADER  ++++++++++ */
+			 /* ++++++++++++++++++++++++++++++ */
+			 
+			 #slider-wrapper i.fa-angle-left
+			 {
+				 width: 40px;
+				 height: 80px;
+				 border-radius: 0 160px 160px 0;
+			 }
+
+			 #slider-wrapper i.fa-angle-right
+			 {
+				 width: 40px;
+				 height: 80px;
+				 border-radius: 160px 0 0 160px;			 
+			 }
+
+			 header h1
+			 {
+				 width: 27%;
+				 font-size: 1.3em;
+				 top: 25%;
+				 left: 15%;
+			 }	
+
+			 header p
+			 {
+				 font-size: 1.2em;
+				 width: 40%;
+				 top: 40%;
+				 left: 15%;
+			 }
+
+			 header a
+			 {
+				 font-size: 1.3em;
+				 width: 10%;
+				 top: 63%;
+				 left: 15%;
+			 }
+			 
+			 /* ++++++++++++++++++++++++++++++++++ */
+	         /* ++++++++++ NOS SERVICES ++++++++++ */
+			 /* ++++++++++++++++++++++++++++++++++ */
+			 
+			 #services-wrapper figure
+			 {
+				 width: 40%;
+			 }
+			 
+			 li.services_competence i
+			 {
+				 left: -33%;
+			 }	
+			 
+		 	 /* +++++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  PORTFOLIO  ++++++++++ */
+			 /* +++++++++++++++++++++++++++++++++ */
+			 
+			 .pf-projets figure
+			 {
+				 width: 23%;					 
+			 }
+			 
+			 .pf-projets figure figcaption
+			 {
+				 height: 23%;
+			 }
+			 
+			 .pf-projets figure figcaption i
+			 {
+				 right: 3%;
+				 bottom: 60%;
+			 }
+		 
+			 /* +++++++++++++++++++++++++++++++ */
+	         /* ++++++++++  CONTACT  ++++++++++ */
+			 /* +++++++++++++++++++++++++++++++ */
+			 
+			 .item_graphismes
+			 {
+				 width: 30%;
+				 display: flex;
+				 justify-content: center;
+				 align-items: center;
+			 }
+			 
+			 .item_barres
+			 {
+				 width: 13%;
+				 height: 1px;
+				 background-color: rgba(0,0,0,0.15);
+				 margin-left: 2%;
+				 margin-right: 2%;
+			 }
+			 
+			 .item_ronds
+			 {
+				 width: 10px;
+				 height: 10px;
+				 margin-left: 2%;
+				 margin-right: 2%;
+				 background-color: rgb(90,170,210);
+				 border-radius: 50%;		 
+			 }
+
+			}

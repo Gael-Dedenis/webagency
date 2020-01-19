@@ -1,38 +1,35 @@
-@font-face
-{
-    font-family: 'roboto';
-        src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot');
-        src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'),
-             url('fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'),
-             url('fonts/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
-        font-weight: normal;
-        font-style: normal;
+@font-face {
+	font-family: 'roboto';
+	src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot');
+	src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'),
+		url('fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'),
+		url('fonts/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-*
-{
+* {
 	font-family: 'roboto', Arial, sans-serif;
-	color: rgb(120,120,120);
+	color: rgb(120, 120, 120);
 }
 
-body
-{
-	margin: 0 auto;
-	padding: 0 auto;
+body {
+	margin: 0;
+	min-width: 360px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-#nav-head, #portfolio-wrapper, #contact-wrapper
-{
-		background-color: rgb(255,255,255);
+.nav-head,
+#portfolio-wrapper,
+.footer-wrapper {
+	background-color: rgb(255, 255, 255);
 }
 
-main
-{
+main {
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -45,10 +42,9 @@ main
 /* +++++ +++++ +++++ +++++ Navigateur +++++ +++++ +++++ +++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-#nav-head
-{
+.nav-head {
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 1000;
@@ -57,155 +53,133 @@ main
 	align-items: center;
 }
 
-#nav-head figure
-{
+.nav-head figure {
 	margin: 0 auto;
-	padding-top: 1rem;
+	margin-top: 1em;
 }
 
-#nav-head ~ img
-{
+.nav-head~img {
 	max-width: 100%;
 	height: auto;
-	object-fit: contain;	
+	object-fit: contain;
 }
 
-#nav-head ul
-{
+.nav-head ul {
 	list-style: none;
-	width: 90%;
+	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	margin: 0 auto;
-	padding-left: unset;
-	padding-top: 1.1rem;
+	margin: 0.7em auto;
+	padding: unset;
 }
 
-#nav-head a
-{
+.nav-head a {
 	text-decoration: none;
 	padding: 4px 5px;
 }
 
-#nav-head a:hover,
-#nav-head a:focus,
-#nav-head a:active
-{
-	border-top: 2px solid rgb(90,170,210);
+.nav-head a:hover,
+.nav-head a:focus,
+.nav-head a:active {
+	border-top: 2px solid rgb(90, 170, 210);
 }
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++ +++++ +++++ +++++ Header +++++ +++++ +++++ +++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-header  
-{
+header {
 	width: 100%;
-	margin-top: 8rem;
+	margin: 0;
 	position: relative;
 }
 
-#slider-wrapper
-{
-	width: 100%;
-}
-
-#slider-wrapper figure
-{
+.header-wrapper figure {
 	z-index: -10;
 	position: relative;
 	margin: 0;
-	width: 100%;
 }
 
-#slider-wrapper img
-{
+.header-wrapper img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
 }
 
 
-#slider-wrapper i
-{
-	color: rgb(255,255,255);
+.header-wrapper i {
+	color: rgb(255, 255, 255);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
-	font-size: 0.85rem;
+	font-size: 0.8rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-#slider-wrapper i.fa-angle-left
-{
+.header-wrapper .fa-angle-left {
 	left: 0;
 	width: 17px;
 	height: 34px;
-	background-color: rgba(0,0,0,0.3);
-	border-radius: 0 68px 68px 0; 
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 0 68px 68px 0;
 }
 
-#slider-wrapper i.fa-angle-right
-{
+.header-wrapper .fa-angle-right {
 	right: 0;
 	width: 17px;
 	height: 34px;
-	background-color: rgba(0,0,0,0.3);
+	background-color: rgba(0, 0, 0, 0.3);
 	border-radius: 68px 0 0 68px;
 }
 
-header h1
-{
+header h1 {
 	width: 45%;
 	position: absolute;
+	top: 2%;
 	left: 10%;
-	top: 5%;
-	font-size: 0.85rem;
+	font-size: 0.7em;
 }
 
-h1 , header p , header a
-{
-    color: rgb(255,255,255);	
+h1,
+header p,
+header a {
+	color: rgb(255, 255, 255);
 }
 
-h1 strong
-{
-	color: rgb(90,170,210);
+h1 strong {
+	color: rgb(90, 170, 210);
 }
 
-header p
-{
+header p {
 	width: 45%;
 	position: absolute;
 	left: 10%;
 	top: 35%;
-	font-size: 0.6rem;	
+	font-size: 0.6rem;
 }
 
-header a
-{
+header a {
 	width: 20%;
 	position: absolute;
 	left: 10%;
-	top: 75%;
+	top: 73%;
 	text-align: center;
 	text-decoration: none;
-	font-size: 0.8rem;
-	background-color: rgb(90,170,210);
-	border-bottom: 3px solid rgb(90,150,190);
+	font-size: 0.7rem;
+	background-color: rgb(90, 170, 210);
+	border-bottom: 3px solid rgb(90, 150, 190);
 	border-radius: 3px;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++ +++++ +++++ +++++ Nos Services +++++ +++++ +++++ +++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-			 
-#services-wrapper
-{
+
+.nos-services {
 	width: 100%;
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -213,257 +187,229 @@ header a
 	margin: auto;
 }
 
-#services-wrapper h2
-{
-	color: rgb(0,0,0);
+.nos-services h2 {
+	color: rgb(0, 0, 0);
 	width: 100%;
 	text-align: center;
+	margin-bottom: 0;
 }
 
-#services-wrapper > p
-{
+.nos-services + p {
 	text-align: center;
-	width: 97%;
+	width: 90%;
 }
 
-#services-wrapper figure
-{
+.nos-services figure {
 	display: none;
 }
 
-#services-wrapper ul
-{
+.nos-services ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }
 
-ul li.services_competence
-{
-	width: 98%;
+.services_competence {
+	width: 96%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 
-li.services_competence h3
-{
+.services_competence h3 {
 	width: 50%;
-	color: rgb(0,0,0);
+	color: rgb(0, 0, 0);
 }
 
-li.services_competence i
-{
-	width : 60px;
-	height: 60px;
+.services_competence i {
+	width: 50px;
+	height: 50px;
 	margin-left: 17%;
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: rgb(90,170,210);
-	border: 1px solid rgba(0,0,0,0.15);
+	color: rgb(90, 170, 210);
+	border: 1px solid rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 }
 
-li.services_competence p
-{
+.services_competence p {
 	width: 100%;
 	text-align: center;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++ +++++ +++++ +++++ Portfolio +++++ +++++ +++++ +++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-#portfolio-wrapper
-{
+#portfolio-wrapper {
+	font-size: 0.7rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#portfolio-wrapper h2
-{
+#portfolio-wrapper h2 {
 	width: 100%;
 	text-align: center;
-	color: rgb(0,0,0);
+	color: rgb(0, 0, 0);
+	margin-bottom: 0;
 }
 
-#portfolio-wrapper p
-{
-	width: 100%;
+#portfolio-wrapper .item_graphismes {
+	margin-top: 0;
+}
+
+#portfolio-wrapper p {
+	width: 90%;
 	text-align: center;
 }
 
-             /* +++++++++++++++++++++++++++++ */
-             /* +++++ Menu de sélection +++++ */
-             /* +++++++++++++++++++++++++++++ */
-			 
-#selecteur-wrapper
-{
+/* +++++++++++++++++++++++++++++ */
+/* +++++ Menu de sélection +++++ */
+/* +++++++++++++++++++++++++++++ */
+
+#selecteur-wrapper {
 	width: 100%;
-	margin: 1rem auto;
+	margin: auto auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-#selecteur-wrapper input
-{
+#selecteur-wrapper input,
+.menu i,
+.pf-projets figure {
 	display: none;
 }
 
-#menu
-{
-	height: 20px;
-	width: 100%;
-	margin-top: 2%;
-	margin-bottom: 3%;
+.menu {
+	margin: 0 auto;
 	position: relative;
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 }
 
-#menu label
-{
-	background-color: rgba(120,120,120,0.3);
-	min-width: 85px;
+nav label {
+	background-color: rgba(120, 120, 120, 0.3);
 	text-align: center;
-	padding: 10px 3px;
-    position: relative;	
+	padding: 11px 24px;
+	position: relative;
 }
 
-#menu label i
-{
-    color: rgb(70,150,190);	
+nav i {
+	color: rgb(70, 150, 190);
 }
 
-#menu label:nth-child(1)
-{
+nav label:first-child {
 	border-radius: 3px 0 0 3px;
 }
 
-#menu label:nth-child(4)
-{
+nav label:last-child {
 	border-radius: 0 3px 3px 0;
 }
 
-#menu label:hover,
-#menu label:active,
-#menu label:focus
-{
-    background-color: rgb(90,170,210);
-	color: rgb(255,255,255);
-	border-bottom: 3px solid rgb(70,150,190);
+nav label:hover,
+nav label:active,
+nav label:focus {
+	background-color: rgb(90, 170, 210);
+	color: rgb(255, 255, 255);
+	padding: 11px 24px;
+	border-bottom: 3px solid rgb(70, 150, 190);
 }
 
-#menu label i,
-.pf-projets figure
-{
-	display: none;
-}
-
-#all:checked ~ * #selecteur_all,
-#creative:checked ~ * #selecteur_crea,
-#corporate:checked ~ * #selecteur_corpo,
-#portfolio:checked ~ * #selecteur_pf
-{
-	background-color: rgb(90,170,210);
-	color: rgb(255,255,255);
-	padding: 9px;
-	border-bottom: 3px solid rgb(70,150,190);
+#all:checked~* #selecteur_all,
+#creative:checked~* #selecteur_crea,
+#corporate:checked~* #selecteur_corpo,
+#portfolio:checked~* #selecteur_pf {
+	background-color: rgb(90, 170, 210);
+	color: rgb(255, 255, 255);
+	padding: 11px 24px;
+	border-bottom: 3px solid rgb(70, 150, 190);
 }
 
 
-#all:checked ~ * #selecteur_all i,
-#creative:checked ~ * #selecteur_crea i,
-#corporate:checked ~ * #selecteur_corpo i,
-#portfolio:checked ~ * #selecteur_pf i
-{
+#all:checked~* #selecteur_all i,
+#creative:checked~* #selecteur_crea i,
+#corporate:checked~* #selecteur_corpo i,
+#portfolio:checked~* #selecteur_pf i {
 	display: flex;
 	position: absolute;
-	top: 30px;
-	left: 37%;
+	top: 80%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 
-#all:checked ~ .pf-projets .all,
-#creative:checked ~ .pf-projets .creative,
-#corporate:checked ~ .pf-projets .corporate,
-#portfolio:checked ~ .pf-projets .portfolio
-{
+#all:checked~.pf-projets .all,
+#creative:checked~.pf-projets .creative,
+#corporate:checked~.pf-projets .corporate,
+#portfolio:checked~.pf-projets .portfolio {
 	display: block;
 }
 
-             /* ++++++++++++++++++++++++++++++++ */
-             /* +++++ Portfolio de projets +++++ */
-             /* ++++++++++++++++++++++++++++++++ */
-			 
-.pf-projets
-{
+/* ++++++++++++++++++++++++++++++++ */
+/* +++++ Portfolio de projets +++++ */
+/* ++++++++++++++++++++++++++++++++ */
+
+.pf-projets {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 
-.pf-projets figure
-{
-	width: 96%;
+.pf-projets figure {
+	width: 100%;
 	position: relative;
 }
 
-.pf-projets figure img
-{
+.pf-projets img {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
 }
 
-.pf-projets figure figcaption
-{
+.pf-projets figcaption {
 	display: none;
+	text-align: center;
 	width: 100%;
-	height: 15%;
-	font-size: 0.8rem;
-	z-index: 10;
+	height: 1.5rem;
+	font-size: 0.7rem;
 	position: absolute;
-	bottom: 2%;
-	background-color: rgba(0,0,0,0.5);
-	color: rgb(255,255,255);
+	bottom: 0.1rem;
+	left: 0;
+	padding-top: 3%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: rgb(255, 255, 255);
 }
 
-.pf-projets figure:hover figcaption
-{
-	display: flex;
-    align-items: center;	
-}		 
+.pf-projets figure:hover figcaption {
+	display: block;
+}
 
-.pf-projets figure figcaption i
-{
-	color: rgb(255,255,255);
-	background-color: rgb(90,170,210);
-	border: 1px solid rgb(255,255,255);
+.pf-projets i {
+	color: rgb(255, 255, 255);
+	background-color: rgb(90, 170, 210);
+	border: 1px solid rgb(255, 255, 255);
 	height: 30px;
 	width: 30px;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
 	position: absolute;
-    right: 5%;
-	bottom: 60%;
-}	 
+}
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */ 
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++ +++++ +++++ +++++ Footer / Contact +++++ +++++ +++++ +++++ */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-#contact-wrapper
-{
+.footer-wrapper {
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -471,48 +417,41 @@ li.services_competence p
 	align-items: center;
 }
 
-#infos
-{
+.infos {
 	width: 98%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-#infos h2
-{
-	color: rgb(0,0,0);
+.infos h2 {
+	color: rgb(0, 0, 0);
 }
 
-#infos address
-{
-    text-align: center;
+address {
+	text-align: center;
 	text-decoration: none;
 	margin-bottom: 2rem;
 }
 
-#infos address a
-{
+address a {
 	text-decoration: none;
 }
 
-#infos address a span
-{
-	border-bottom: 1px dotted rgb(0,0,0);
+address span {
+	border-bottom: 1px dotted rgb(0, 0, 0);
 }
 
-#infos #ci-form-wrapper
-{
+.infos form {
 	width: 35%;
-	z-index:10;
+	z-index: 20;
 	position: absolute;
 	top: 20rem;
 	left: 60%;
 }
 
-#ci-form-wrapper fieldset
-{
-	background-color: rgba(255,255,255,0.8);
+form fieldset {
+	background-color: rgba(255, 255, 255, 0.8);
 	border: unset;
 	z-index: 10;
 	width: 90%;
@@ -523,71 +462,100 @@ li.services_competence p
 	align-items: center;
 }
 
-fieldset input:last-child
-{
+fieldset input:last-child {
 	align-self: flex-start;
 }
 
-#ci-form-wrapper input:nth-child(1),
-#ci-form-wrapper input:nth-child(2),
-#ci-form-wrapper input:nth-child(3)
-{
+form input:nth-child(1),
+form input:nth-child(2),
+form input:nth-child(3) {
 	width: 97%;
 }
 
-#ci-form-wrapper input#envoyer
-{
-    background-color: rgb(90,170,210);
-	color: rgb(255,255,255);
-	border-bottom: 3px solid rgb(70,150,190);
+form input#envoyer {
+	background-color: rgb(90, 170, 210);
+	color: rgb(255, 255, 255);
+	border-bottom: 3px solid rgb(70, 150, 190);
 	border-radius: 3px;
 }
 
-#ci-form-wrapper textarea#message
-{
+form textarea {
 	width: 97%;
 	height: 130px;
 }
 
-#contact-wrapper #iframe-wrapper
-{
+#iframe-wrapper {
 	overflow: hidden;
 	height: auto;
-	width: 100%;	
-	z-index: 0;
-	position: absolute;
+	width: 100%;
+	position: relative;
 	top: 100%;
 	left: 0;
 }
 
-#iframe-wrapper iframe
-{
+.fond_bleu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 1000px;
+	background-color: rgba(50, 160, 190, 0.2);
+}
+
+#iframe-wrapper iframe {
 	width: 100%;
 	height: auto;
 	min-height: 600px;
 	object-fit: contain;
 	border: 0;
-}			 
-	 
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */			 
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* +++++ +++++ +++++ +++++ Items Graphique +++++ +++++ +++++ +++++ */
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-.services_competence .item_ronds
-{
-	position: absolute;
-	left: 54px;
-    z-index: 10;
+.nos-services .item_graphismes {
+	margin-top: 0;
 }
-		 
-.services_competence .item_ronds2
-{
+
+.services_competence .item_ronds {
+	position: absolute;
+	left: 87%;
+	z-index: 10;
+}
+
+.services_competence .item_ronds2 {
 	width: 25px;
-    height: 25px;
-    background-color: rgb(255,255,255);
+	height: 25px;
+	background-color: rgb(255, 255, 255);
 	border-radius: 50%;
 	position: absolute;
-	left: 54px;			 
+	left: 87%;
+}
+
+.item_graphismes {
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item_barres {
+	width: 13%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.15);
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.item_ronds {
+	width: 10px;
+	height: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: rgb(90, 170, 210);
+	border-radius: 50%;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
@@ -596,83 +564,86 @@ fieldset input:last-child
 
 /* ++++++++++++++++++++++++++++  Breakpoint à 576px  ++++++++++++++++++++++++++++ */
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {
+
+	h2 {
+		font-size: 1.1rem;
+	}
+
+	p {
+		font-size: 0.9rem;
+	}
 
 	/* ++++++++++++++++++++++++++++++++++ */
 	/* ++++++++++  Navigateur  ++++++++++ */
 	/* ++++++++++++++++++++++++++++++++++ */
 
-	#nav-head figure
-	{
-	   padding-top: unset;
-	   margin-top: 2.5rem;
-	}
-	
-	#nav-head ul
-	{
-	   width: 40%;
-	   margin-top: 1.2rem; 
+	.nav-head {
+		height: 7rem;
 	}
 
-	#nav-head a
-	{
-	   padding: 55px 6px; 
+	.nav-head figure {
+		margin-top: 0.4em;
+		margin-left: 5%;
+		width: 25%;
 	}
 
-	#nav-head ul li a:hover,
-	#nav-head ul li a:focus,
-	#nav-head ul li a:active
-	{
-		border-top: 3px solid rgb(90,170,210);
+	.nav-head ul {
+		width: 35%;
+		margin-top: 1em;
+		margin-left: 20%;
 	}
-	
+
+	.nav-head a {
+		padding: 44px 6px;
+	}
+
+	.nav-head a:hover,
+	.nav-head a:focus,
+	.nav-head a:active {
+		border-top: 3px solid rgb(90, 170, 210);
+	}
+
 	/* ++++++++++++++++++++++++++++++ */
 	/* ++++++++++  Header  ++++++++++ */
 	/* ++++++++++++++++++++++++++++++ */
 
-	#slider-wrapper i.fa-angle-left,
-	#slider-wrapper i.fa-angle-right
-	{
+	.header-wrapper i {
 		font-size: 1em;
 	}
-	
-	#slider-wrapper i.fa-angle-left
-	{
+
+	.header-wrapper .fa-angle-left {
 		width: 23px;
 		height: 46px;
 		border-radius: 0 92px 92px 0;
 
 	}
 
-	#slider-wrapper i.fa-angle-right
-	{
+	.header-wrapper .fa-angle-right {
 		width: 23px;
 		height: 46px;
 		border-radius: 92px 0 0 92px;
-		
+
 	}
 
-	header h1
-	{
-		width: 33%;
-		font-size: 1.05rem;
-		top: 20%;
-		left: 10%;
-	}	
-
-	header p
-	{
-		font-size: 0.75rem;
-		width: 40%;
-		top: 40%;
+	header h1 {
+		width: 18rem;
+		font-size: 1.3rem;
+		top: 5%;
 		left: 10%;
 	}
 
-	header a
-	{
+	header p {
+		font-size: 0.9rem;
+		width: 45%;
+		top: 35%;
+		left: 10%;
+	}
+
+	header a {
 		font-size: 0.9rem;
 		width: 15%;
-		top: 65%;
+		top: 67%;
 		left: 10%;
 	}
 
@@ -680,416 +651,401 @@ fieldset input:last-child
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 	/* ++++++++++++++++++++++++++++++++++ */
 
-	#services-wrapper
-	{
-		margin-top: 3%;
-		font-size: 1em;
+	.nos-services {
+		margin-top: 1.5%;
 	}
-	
-	#services-wrapper p
-	{
-		width: 80%;
-	}
-	
-	#services-wrapper figure
-	{
-		display: block;
+
+	.nos-services p {
 		width: 100%;
+		text-align: center;
+	}
+
+	.nos-services figure {
+		width: 60%;
 		display: flex;
 		justify-content: center;
 	}
-	
-	#services-wrapper figure img
-	{
+
+	.nos-services img {
 		max-width: 100%;
 		height: auto;
 		object-fit: contain;
 	}
-	
-	#services-wrapper ul
-	{
-		width: 70%;
+
+	.nos-services ul {
+		width: 80%;
 	}
-	
-	li.services_competence i
-	{
+
+	.services_competence h3 {
+		font-size: 1rem;	
+	}
+
+    .services_competence p {
+		margin-top: 0;
+	}
+
+	.services_competence i {
 		position: relative;
 	}
-	
+
 	/* +++++++++++++++++++++++++++++++++ */
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
 	/* +++++++++++++++++++++++++++++++++ */
 
-	#portfolio-selecteur
-	{
-		margin: 2rem auto;
-	}
-
-	.pf-projets
-	{
+	.pf-projets {
+		margin-top: 3%;
 		flex-direction: row;
 	}
 
-	.pf-projets figure
-	{
-		width: 40%;
-		margin: 0 auto;
+	.pf-projets figure {
+		width: 49%;
+		margin: 2% auto;
 	}
-	
-	.pf-projets figure figcaption
-	{
-		height: 30%;
-		bottom: 2%;
+
+	.pf-projets figcaption {
+		height: 2rem;
+		z-index: 10;
+		padding-top: 6%;
 	}
-	
-	.pf-projets figure figcaption i
-	{
-		width: 40px;
-		height: 40px;
-		right: 7%;
-		bottom: 73%;
-	}
-	
+
 	/* +++++++++++++++++++++++++++++++ */
 	/* ++++++++++  CONTACT  ++++++++++ */
 	/* +++++++++++++++++++++++++++++++ */
 
-	footer
-	{
-	  margin-top: 2rem;
+	.footer-wrapper {
+		margin-top: 5%;
 	}
 
-	#infos
-	{
-		width: 33%;
-		z-index: 10;
+	.infos {
+		width: 37%;
+		z-index: 20;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		background-color: rgba(255,255,255,0.8);
+		background-color: rgba(255, 255, 255, 0.8);
 		position: absolute;
-		top: 0.7rem;
-		left: 65%;			 
+		top: 3%;
+		left: 60%;
 	}
-	
-	#infos #ci-form-wrapper
-	{
+
+	.infos form {
 		position: unset;
 		width: 97%;
 	}
-	
-	#ci-form-wrapper fieldset
-	{
+
+	section fieldset {
 		border: unset;
-	}	
+	}
 
 }
 
 /* ++++++++++++++++++++++++++++  Breakpoint à 768px  ++++++++++++++++++++++++++++ */
 
-    @media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-		 /* ++++++++++++++++++++++++++++++++++ */
-     	 /* ++++++++++  NAVIGATEUR  ++++++++++ */
-		 /* ++++++++++++++++++++++++++++++++++ */
-		 
-		 /* ++++++++++++++++++++++++++++++ */
-	     /* ++++++++++  HEADER  ++++++++++ */
-	     /* ++++++++++++++++++++++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  NAVIGATEUR  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
 
-	     /* ++++++++++++++++++++++++++++++++++ */
-	     /* ++++++++++ NOS SERVICES ++++++++++ */
-		 /* ++++++++++++++++++++++++++++++++++ */
-		 
-	     /* +++++++++++++++++++++++++++++++++ */
-	     /* ++++++++++  PORTFOLIO  ++++++++++ */
-		 /* +++++++++++++++++++++++++++++++++ */
-		 
- 	     /* +++++++++++++++++++++++++++++++ */
-	     /* ++++++++++  CONTACT  ++++++++++ */
-		 /* +++++++++++++++++++++++++++++++ */
-		 		 
+    .nav-head figure{
+        margin-left: 13%;
 	}
+
+	/* ++++++++++++++++++++++++++++++ */
+	/* ++++++++++  HEADER  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++ */
+
+	.header-wrapper i {
+		font-size: 1.1em;
+	}
+
+	.header-wrapper .fa-angle-left {
+		width: 26px;
+		height: 52px;
+		border-radius: 0 104px 104px 0;
+
+	}
+
+	.header-wrapper .fa-angle-right {
+		width: 26px;
+		height: 52px;
+		border-radius: 104px 0 0 104px;
+
+	}
+
+	header h1 {
+		left: 13%;
+	}
+
+	header p {
+		left: 13%;
+	}
+
+	header a {
+		left: 13%;
+	}	
+
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++ NOS SERVICES ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+
+	.nos-services {
+		margin-top: 1%;
+		flex-direction: row;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.nos-services .item_graphismes {
+		width: 30%;
+	}
+
+	.nos-services  p {
+		width: 75%;
+	}
+
+	.nos-services figure {
+		margin: 0;
+		width: 43%;
+	}
+
+	.nos-services ul {
+		width: 55%;
+		margin-right: -5%;
+		padding: unset;
+	}
+
+    .services_competence {
+		position: relative;
+	}
+
+	.services_competence h3 {
+		font-size: 1rem;
+		width: 50%;
+		margin-left: 15%;
+		margin-bottom: 0;
+	}
+
+	.services_competence p {		
+		width: 60%;
+		margin-left: 25%;
+		text-align: justify;
+	}
+
+	.services_competence i {
+		position: absolute;
+		top: 10%;
+		left: -3%;
+	}
+
+	/* +++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  PORTFOLIO  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++++ */
+
+	.menu{
+		font-size: 1.2em;
+	}
+	
+    .pf-projets figcaption{
+		padding-top: 5%;
+		font-size: 1.2em;
+	}
+
+	.pf-projets i{		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: -15px;
+		left: 85%;
+	}
+	/* +++++++++++++++++++++++++++++++ */
+	/* ++++++++++  CONTACT  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++ */
+
+}
 
 /* ++++++++++++++++++++++++++++  Breakpoint à 992px  ++++++++++++++++++++++++++++ */
 
-	    @media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
 
-			 /* ++++++++++++++++++++++++++++++++++ */
-			 /* ++++++++++  NAVIGATEUR  ++++++++++ */
-             /* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  NAVIGATEUR  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
 
-			 #nav-head figure
-			 {
-				  width: 30%;
-				  padding-top: unset;
-				  margin-top: 2.5rem;
-			 }
-			 
-			 #nav-head ul
-			 {
-				  width: 27%;
-				  margin-top: 1.2rem;
-			 }
-			 
-			 /* ++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  HEADER  ++++++++++ */
-			 /* ++++++++++++++++++++++++++++++ */
-			 
-			 #slider-wrapper i.fa-angle-left,
-             #slider-wrapper i.fa-angle-right
-		     {
-		         font-size: 1.3em;
-		     }
-			 
-             #slider-wrapper i.fa-angle-left
-             {
-			     width: 30px;
-			     height: 60px;
-			     border-radius: 0 120px 120px 0;
-		     }
+	.nav-head figure {
+		width: 30%;
+	}
 
-             #slider-wrapper i.fa-angle-right
-		     {
-			     width: 30px;
-			     height: 60px;
-			     border-radius: 120px 0 0 120px;		 
-		     }
+	.nav-head ul {
+		width: 27%;
+		margin-left: 0.3em;
+	}
 
-             header h1
-             {
-			     width: 32%;
-			     font-size: 1.3rem;
-			     top: 25%;
-				 left: 14%;
-		     }	
+	/* ++++++++++++++++++++++++++++++ */
+	/* ++++++++++  HEADER  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++ */
 
-             header p
-             {
-			     font-size: 0.8rem;
-			     width: 50%;
-			     top: 45%;
-				 left: 14%;
-		     }
+	.header-wrapper i {
+		font-size: 1.3em;
+	}
 
-             header a
-             {
-			     font-size: 1.2rem;
-				 width: 13%;
-			     top: 60%;
-				 left: 14%;
-			 }
-			 
-			 /* ++++++++++++++++++++++++++++++++++ */
-	         /* ++++++++++ NOS SERVICES ++++++++++ */
-			 /* ++++++++++++++++++++++++++++++++++ */
-			 
-			 #services-wrapper
-			 {
-				 margin-top: 1.5%;
-				 font-size: 1.2rem;
-				 flex-direction: row;
-				 flex-wrap: wrap;
-			 }
-			 
-			 #services-wrapper h2
-			 {
-				 width: 100%;
-			 }
-			 
-			 #services-wrapper .item_graphismes
-			 {
-				 width: 30%;
-				 margin: auto;
-				 margin-bottom: 1.5rem;
-			 }
-			 
-			 #services-wrapper p
-		     {
-			     width: 90%;
-				 margin: auto;
-		     }
-			 
-			 #services-wrapper figure
-			 {
-				 width: 35%;
-			 }
-			 
-			 #services-wrapper ul
-			 {
-				 width: 45%;
-			 }
-			 
-			 li.services_competence 
-			 {
-				 width: 100%;
-                 position: relative;
-                 display: flex;
-                 flex-direction: column;
-                 justify-content:  center;
-                 align-items: flex-start;				 
-			 }			 
-			 
-			 li.services_competence i
-			 {
-                 position: absolute;
-                 left: -40%;
-                 top: 7%;				 
-			 }
-			 
-			 li.services_competence h3
-			 {
-				 width: 80%;
-				 text-align: left;
-				 margin-left: -10%;
-			 }
-			 li.services_competence p
-			 {
-				 width: 80%;
-				 text-align: left;
-			 }
+	.header-wrapper .fa-angle-left {
+		width: 30px;
+		height: 60px;
+		border-radius: 0 120px 120px 0;
+	}
 
-			 /* +++++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  PORTFOLIO  ++++++++++ */
-			 /* +++++++++++++++++++++++++++++++++ */
-			 
-			 .pf-projets figure
-			 {
-				 width: 35%;
-				 margin: 0 auto;
-			 }
-			 
-		 	 /* +++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  CONTACT  ++++++++++ */
-			 /* +++++++++++++++++++++++++++++++ */
-			 
-			 #infos
-			 {
-				 width: 30%;
-				 left: 69%;
-			 }			 
-		}
+	.header-wrapper .fa-angle-right {
+		width: 30px;
+		height: 60px;
+		border-radius: 120px 0 0 120px;
+	}
+
+	header h1 {
+		width: 32%;
+		font-size: 1.3rem;
+		top: 25%;
+		left: 14%;
+	}
+
+	header p {
+		font-size: 0.8rem;
+		width: 50%;
+		top: 45%;
+		left: 14%;
+	}
+
+	header a {
+		font-size: 1.2rem;
+		width: 13%;
+		top: 60%;
+		left: 14%;
+	}
+
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++ NOS SERVICES ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+
+	.services_competence i {
+		top: 15%;
+	}
+
+	/* +++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  PORTFOLIO  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++++ */
+
+	.pf-projets figure {
+		width: 32%;
+		margin: 0 auto;
+	}
+
+	/* +++++++++++++++++++++++++++++++ */
+	/* ++++++++++  CONTACT  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++ */
+
+	.infos {
+		width: 30%;
+		left: 69%;
+	}
+}
 
 /* ++++++++++++++++++++++++++++  Breakpoint à 1200px  ++++++++++++++++++++++++++++ */
 
-		    @media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
-			 /* ++++++++++++++++++++++++++++++++++ */
-			 /* ++++++++++  NAVIGATEUR  ++++++++++ */
-			 /* ++++++++++++++++++++++++++++++++++ */
-			 
-			 #nav-head ul
-			 {	
-				 width: 23%;
-				 margin-right: 12rem;
-			 }	
-	
-			 /* ++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  HEADER  ++++++++++ */
-			 /* ++++++++++++++++++++++++++++++ */
-			 
-			 #slider-wrapper i.fa-angle-left
-			 {
-				 width: 40px;
-				 height: 80px;
-				 border-radius: 0 160px 160px 0;
-			 }
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  NAVIGATEUR  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
 
-			 #slider-wrapper i.fa-angle-right
-			 {
-				 width: 40px;
-				 height: 80px;
-				 border-radius: 160px 0 0 160px;			 
-			 }
+	.nav-head ul {
+		width: 23%;
+		margin-right: 12rem;
+	}
 
-			 header h1
-			 {
-				 width: 27%;
-				 font-size: 1.3em;
-				 top: 25%;
-				 left: 15%;
-			 }	
+	/* ++++++++++++++++++++++++++++++ */
+	/* ++++++++++  HEADER  ++++++++++ */
+	/* ++++++++++++++++++++++++++++++ */
 
-			 header p
-			 {
-				 font-size: 1.2em;
-				 width: 40%;
-				 top: 40%;
-				 left: 15%;
-			 }
+	.header-wrapper .fa-angle-left {
+		width: 40px;
+		height: 80px;
+		border-radius: 0 160px 160px 0;
+	}
 
-			 header a
-			 {
-				 font-size: 1.3em;
-				 width: 10%;
-				 top: 63%;
-				 left: 15%;
-			 }
-			 
-			 /* ++++++++++++++++++++++++++++++++++ */
-	         /* ++++++++++ NOS SERVICES ++++++++++ */
-			 /* ++++++++++++++++++++++++++++++++++ */
-			 
-			 #services-wrapper figure
-			 {
-				 width: 40%;
-			 }
-			 
-			 li.services_competence i
-			 {
-				 left: -33%;
-			 }	
-			 
-		 	 /* +++++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  PORTFOLIO  ++++++++++ */
-			 /* +++++++++++++++++++++++++++++++++ */
-			 
-			 .pf-projets figure
-			 {
-				 width: 23%;					 
-			 }
-			 
-			 .pf-projets figure figcaption
-			 {
-				 height: 23%;
-			 }
-			 
-			 .pf-projets figure figcaption i
-			 {
-				 right: 3%;
-				 bottom: 60%;
-			 }
-		 
-			 /* +++++++++++++++++++++++++++++++ */
-	         /* ++++++++++  CONTACT  ++++++++++ */
-			 /* +++++++++++++++++++++++++++++++ */
-			 
-			 .item_graphismes
-			 {
-				 width: 30%;
-				 display: flex;
-				 justify-content: center;
-				 align-items: center;
-			 }
-			 
-			 .item_barres
-			 {
-				 width: 13%;
-				 height: 1px;
-				 background-color: rgba(0,0,0,0.15);
-				 margin-left: 2%;
-				 margin-right: 2%;
-			 }
-			 
-			 .item_ronds
-			 {
-				 width: 10px;
-				 height: 10px;
-				 margin-left: 2%;
-				 margin-right: 2%;
-				 background-color: rgb(90,170,210);
-				 border-radius: 50%;		 
-			 }
+	.header-wrapper .fa-angle-right {
+		width: 40px;
+		height: 80px;
+		border-radius: 160px 0 0 160px;
+	}
 
-			}
+	header h1 {
+		width: 27%;
+		font-size: 1.3em;
+		top: 25%;
+		left: 13%;
+	}
+
+	header p {
+		font-size: 1.2em;
+		width: 40%;
+		top: 40%;
+		left: 13%;
+	}
+
+	header a {
+		font-size: 1.3em;
+		width: 10%;
+		top: 63%;
+		left: 13%;
+	}
+
+	/* ++++++++++++++++++++++++++++++++++ */
+	/* ++++++++++ NOS SERVICES ++++++++++ */
+	/* ++++++++++++++++++++++++++++++++++ */
+
+	.nos-services figure {
+		width: 40%;
+	}
+
+	.services_competence i {
+		left: 5%;
+		top: 20%;
+	}
+
+	/* +++++++++++++++++++++++++++++++++ */
+	/* ++++++++++  PORTFOLIO  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++++ */
+
+	.pf-projets figure {
+		width: 23%;
+	}
+
+	.pf-projets figcaption {
+		height: 23%;
+		padding-top: 7.5%;
+	}
+
+	.pf-projets i {
+		right: 3%;
+		bottom: 60%;
+	}
+
+	/* +++++++++++++++++++++++++++++++ */
+	/* ++++++++++  CONTACT  ++++++++++ */
+	/* +++++++++++++++++++++++++++++++ */
+
+	.infos {
+		width: 20%;
+		left: 70%;
+	}
+
+	section fieldset {
+		height: 360px;
+	}
+
+	fieldset textarea {
+		height: 200px;
+	}
+
+}

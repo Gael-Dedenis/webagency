@@ -161,6 +161,27 @@ address {
 	border-radius: 6.8rem 0 0 6.8rem;
 }
 
+.progresse_barre,
+.progresse_cursor {
+	height: 0.5rem;
+}
+
+.progresse_barre {
+	position: relative;
+	bottom: 0.6rem;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.progresse_cursor {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 15%;
+	background-color: rgb(70,150,180);
+}
+
 h1,
 header p,
 header a {
@@ -1200,7 +1221,11 @@ form textarea {
 	}
 
 	fieldset textarea {
-		height: 220px;
+		height: 200px;
+	}
+
+	fieldset input:last-child {
+
 	}
 
 	/* ++++++++++  Items Graphiques  ++++++++++ */

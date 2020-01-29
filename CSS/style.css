@@ -215,7 +215,7 @@ header a {
 
 /* +++++ +++++ +++++ +++++ Nos Services +++++ +++++ +++++ +++++ */
 
-.nos-services {
+.our-services {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -224,22 +224,22 @@ header a {
 	width: 100%;
 }
 
-.nos-services h2 {
+.our-services h2 {
 	margin-bottom: 0;
 	width: 100%;
 	text-align: center;
 }
 
-.nos-services  p {
+.our-services  p {
 	width: 90%;
     text-align: center;
 }
 
-.nos-services figure {
+.our-services figure {
 	display: none;
 }
 
-.nos-services ul {
+.our-services ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -296,7 +296,7 @@ header a {
 
 /* +++++ Menu de sélection +++++ */
 
-.selecteur-wrapper {
+.selector-wrapper {
 	width: 100%;
 	margin: auto auto;
 	display: flex;
@@ -304,7 +304,7 @@ header a {
 	align-items: center;
 }
 
-.selecteur-wrapper input,
+.selector-wrapper input,
 .menu i,
 .pf-projets figure {
 	display: none;
@@ -348,10 +348,10 @@ nav label:focus {
 	color: rgb(255, 255, 255);
 }
 
-#all:checked~* #selecteur_all,
-#creative:checked~* #selecteur_crea,
-#corporate:checked~* #selecteur_corpo,
-#portfolio:checked~* #selecteur_pf {
+#all:checked~* #selector_all,
+#creative:checked~* #selector_crea,
+#corporate:checked~* #selector_corpo,
+#portfolio:checked~* #selector_pf {
 	border-bottom: 0.3rem solid rgb(70, 150, 190);
 	padding: 0.5rem 0.8rem;
 	background-color: rgb(90, 170, 210);
@@ -359,10 +359,10 @@ nav label:focus {
 }
 
 
-#all:checked~* #selecteur_all i,
-#creative:checked~* #selecteur_crea i,
-#corporate:checked~* #selecteur_corpo i,
-#portfolio:checked~* #selecteur_pf i {
+#all:checked~* #selector_all i,
+#creative:checked~* #selector_crea i,
+#corporate:checked~* #selector_corpo i,
+#portfolio:checked~* #selector_pf i {
 	display: flex;
 	position: absolute;
 	top: 1.6rem;
@@ -522,7 +522,7 @@ form textarea {
 	width: 100%;
 }
 
-.fond_bleu {
+.blue_background {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -710,22 +710,22 @@ form textarea {
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
-	.nos-services {
+	.our-services {
 		margin-top: 1.5%;
 	}
 
-	.nos-services p {
+	.our-services p {
 		width: 90%;
 		text-align: center;
 	}
 
-	.nos-services figure {
+	.our-services figure {
 		display: flex;
 		justify-content: center;
 		width: 70%;
 	}
 
-	.nos-services ul {
+	.our-services ul {
 		width: 90%;
 	}
 
@@ -893,27 +893,27 @@ form textarea {
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
-	.nos-services {
+	.our-services {
 		flex-direction: row;
 		justify-content: center;
 		flex-wrap: wrap;
 		margin-top: 1%;
 	}
 
-	.nos-services .item_graphismes {
+	.our-services .item_graphismes {
 		width: 30%;
 	}
 
-	.nos-services  p {
+	.our-services  p {
 		width: 75%;
 	}
 
-	.nos-services figure {
+	.our-services figure {
 		margin: 0;
 		width: 43%;
 	}
 
-	.nos-services ul {
+	.our-services ul {
 		margin-right: -5%;
 		padding: unset;
 		width: 55%;
@@ -999,10 +999,6 @@ form textarea {
 	}
 
 	/* ++++++++++  NAVIGATEUR  ++++++++++ */
-
-	.nav-head figure {
-
-	}
 
 	.nav-head ul {
 		margin-right: 17%;
@@ -1153,15 +1149,15 @@ form textarea {
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
-	.nos-services figure {
+	.our-services figure {
 		width: 40%;
 	}
 	
-	.nos-services li:last-child {
+	.our-services li:last-child {
 		margin-right: 7rem;
 	}
 
-	.nos-services li:last-child i {
+	.our-services li:last-child i {
 		left: -7.2rem;
 	}
 
@@ -1177,17 +1173,17 @@ form textarea {
 		padding: 1rem 1.3rem;
 	}
 
-	#all:checked ~ * #selecteur_all, 
-	#creative:checked ~ * #selecteur_crea, 
-	#corporate:checked ~ * #selecteur_corpo, 
-	#portfolio:checked ~ * #selecteur_pf {
+	#all:checked ~ * #selector_all, 
+	#creative:checked ~ * #selector_crea, 
+	#corporate:checked ~ * #selector_corpo, 
+	#portfolio:checked ~ * #selector_pf {
 		padding: 1rem 1.3rem;
 	}
 
-	#all:checked ~ * #selecteur_all i, 
-	#creative:checked ~ * #selecteur_crea i,
-	#corporate:checked ~ * #selecteur_corpo i, 
-	#portfolio:checked ~ * #selecteur_pf i {
+	#all:checked ~ * #selector_all i, 
+	#creative:checked ~ * #selector_crea i,
+	#corporate:checked ~ * #selector_corpo i, 
+	#portfolio:checked ~ * #selector_pf i {
 		top: 2.8rem;
 	}
 
@@ -1222,10 +1218,6 @@ form textarea {
 
 	fieldset textarea {
 		height: 200px;
-	}
-
-	fieldset input:last-child {
-
 	}
 
 	/* ++++++++++  Items Graphiques  ++++++++++ */

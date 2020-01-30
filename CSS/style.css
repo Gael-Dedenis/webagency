@@ -1096,6 +1096,10 @@ form textarea {
 
 	/* ++++++++++  NAVIGATEUR  ++++++++++ */
 
+    .nav-head figure {
+		margin-left: 16%;
+	}
+
 	.nav-head ul {
 		margin-right: 20%;
 	}
@@ -1154,14 +1158,18 @@ form textarea {
 	}
 	
 	.our-services li:last-child {
-		margin-right: 7rem;
+		margin-right: 8.5rem;
 	}
 
 	.our-services li:last-child i {
-		left: -7.2rem;
+		left: -7.5rem;
 	}
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
+
+    .menu {
+		width: 100%;
+	}
 
 	.menu label {
 		padding: 1.1rem 1.4rem;

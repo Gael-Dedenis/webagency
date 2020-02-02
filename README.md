@@ -1,4 +1,4 @@
-# webagency
+# WebAgency
 
 ![Logo WebAgency](/images/logo.png)
 
@@ -7,10 +7,11 @@
 Premier projet de ma formation OpenClassrooms, celui-ci correspond au métier d'intégrateur web.
 Ici nous devons reproduire la maquette d'une agence web, La WEBAGENCY.
 
-Vous trouverez ainsi en dossiers:
+**Vous trouverez ainsi en dossiers** :
 - index.html
 - CSS/
 - Font/
 - images/
 
-Liens: <https://p1-oc-webagency.gael-dedenis.fr>
+**Liens** :
+- [La WebAgency](https://p1-oc-webagency.gael-dedenis.fr)

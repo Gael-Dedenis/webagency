@@ -12,3 +12,5 @@ Vous trouverez ainsi en dossiers:
 - CSS/
 - Font/
 - images/
+
+Liens: <https://p1-oc-webagency.gael-dedenis.fr>

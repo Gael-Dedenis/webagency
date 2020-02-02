@@ -196,18 +196,17 @@ header p {
 	width: 45%;
 	position: absolute;
 	left: 7%;
-	top: 3.4rem;
+	top: 3rem;
 }
 
 header a {
 	position: absolute;
 	left: 7%;
-	top: 9rem;
-	border-radius: 0.3rem;
+	top: 8.2rem;
+	border-radius: 0.5rem;
 	border-bottom: 0.3rem solid rgb(70, 150, 190);
-	padding: 0.8rem 0.6rem;
-	padding-bottom: 0;
-	height: 2rem;
+	padding: 0.3rem;
+	padding-bottom: 0.1rem;
 	text-align: center;
 	text-decoration: none;
 	background-color: rgb(90, 170, 210);
@@ -669,7 +668,7 @@ form textarea {
 	}
 
 	.nav-head a {
-		padding: 3.5rem 0.8rem;
+		padding: 3.2rem 0.8rem;
 	}
 
 	.nav-head a:hover,
@@ -863,6 +862,9 @@ form textarea {
 		width: 20rem;
 	}
 
+	.nav-head a {
+		padding: 3.4rem 0.8rem;
+	}
 	/* ++++++++++  HEADER  ++++++++++ */
 
 	.slider-wrapper i {
@@ -916,7 +918,7 @@ form textarea {
 	.our-services ul {
 		margin-right: -5%;
 		padding: unset;
-		width: 55%;
+		width: 30%;
 	}
 
     .services_competence {
@@ -930,8 +932,7 @@ form textarea {
 	}
 
 	.services_competence p {		
-		margin-left: 25%;
-		width: 60%;
+		margin-left: 32.5%;
 		text-align: justify;
 	}
 
@@ -1079,7 +1080,7 @@ form textarea {
 @media screen and (min-width: 1200px) {
 
     h1 {
-		top: 21rem;
+		top: 23%;
 		left: 16%;
 		width: 65rem;
 		font-size: 3.4rem;
@@ -1138,12 +1139,12 @@ form textarea {
 	}
 
 	header p {
-		top: 30rem;
+		top: 40%;
 		left: 16%;
 	}
 
 	header a {
-		top: 36rem;
+		top: 55%;
 		left: 16%;
 		padding-top: 1.4rem;
 		width: 12rem;
@@ -1155,14 +1156,6 @@ form textarea {
 
 	.our-services figure {
 		width: 40%;
-	}
-	
-	.our-services li:last-child {
-		margin-right: 8.5rem;
-	}
-
-	.our-services li:last-child i {
-		left: -7.5rem;
 	}
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */

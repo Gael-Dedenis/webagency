@@ -245,19 +245,19 @@ header a {
 	align-items: center;
 }
 
-.services_competence {
+.services_skills {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.services_competence h3 {
+.services_skills h3 {
 	width: 50%;
 	margin-left: 0;
 }
 
-.services_competence i {
+.services_skills i {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -542,7 +542,7 @@ form textarea {
 
 /* +++++ +++++ +++++ +++++ Items Graphique +++++ +++++ +++++ +++++ */
 
-.services_competence .item_ronds {
+.services_skills .item_circle {
 	position: absolute;
 	left: 2.8rem;
 	z-index: 10;
@@ -550,14 +550,14 @@ form textarea {
 	height: 0.7rem;
 }
 
-.services_competence .item_ronds2 {
+.services_skills .item_circle2 {
 	position: absolute;
 	left: 2.3rem;
 	width: 1.4rem;
 	height: 1.4rem;
 }
 
-.item_barres {
+.item_bar {
 	margin-left: 2%;
 	margin-right: 2%;
 	width: 2rem;
@@ -565,7 +565,7 @@ form textarea {
 	background-color: rgba(0, 0, 0, 0.15);
 }
 
-.item_ronds {
+.item_circle {
 	margin-left: 2%;
 	margin-right: 2%;
 	border-radius: 50%;
@@ -574,7 +574,7 @@ form textarea {
 	background-color: rgb(90, 170, 210);
 }
 
-.item_ronds2 {
+.item_circle2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -585,7 +585,7 @@ form textarea {
 }
 
 
-.item_graphismes {
+.item_graphics {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -595,15 +595,15 @@ form textarea {
 	width: 30%;
 }
 
-.item_graphismes span {
+.item_graphics span {
 	margin: 0;
 }
 
-.item_graphismes .item_ronds {
+.item_graphics .item_circle {
 	margin: 0 auto;
 }
 
-.item_graphismes .item_ronds2 {
+.item_graphics .item_circle2 {
 	width: 2rem;
 	height: 2rem;
 }
@@ -728,11 +728,11 @@ form textarea {
 		width: 90%;
 	}
 
-    .services_competence p {
+    .services_skills p {
 		margin-top: 0;
 	}
 
-	.services_competence i {
+	.services_skills i {
 		border: 0.1rem solid rgba(0, 0, 0, 0.15);
 		width: 4rem;
 		height: 4rem;
@@ -806,13 +806,13 @@ form textarea {
 
 	/* ++++++++++  Items Graphiques  ++++++++++ */
 
-	.services_competence .item_ronds {
+	.services_skills .item_circle {
 		left: 3.7rem;
 		width: 1rem;
 		height: 1rem;
 	}
 	
-	.services_competence .item_ronds2 {
+	.services_skills .item_circle2 {
 		left: 3.2rem;
 		width: 1.6rem;
 		height: 1.6rem;
@@ -902,7 +902,7 @@ form textarea {
 		margin-top: 1%;
 	}
 
-	.our-services .item_graphismes {
+	.our-services .item_graphics {
 		width: 30%;
 	}
 
@@ -921,22 +921,22 @@ form textarea {
 		width: 30%;
 	}
 
-    .services_competence {
+    .services_skills {
 		position: relative;
 	}
 
-	.services_competence h3 {
+	.services_skills h3 {
 		margin-left: 15%;
 		margin-bottom: 0;
 		width: 50%;
 	}
 
-	.services_competence p {		
+	.services_skills p {		
 		margin-left: 32.5%;
 		text-align: justify;
 	}
 
-	.services_competence i {
+	.services_skills i {
 		position: absolute;
 		top: 10%;
 		left: -5rem;
@@ -1033,7 +1033,7 @@ form textarea {
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
-	.services_competence i {
+	.services_skills i {
 		top: 17%;
 		left: -7rem;
 		width: 6rem;
@@ -1066,11 +1066,11 @@ form textarea {
 
 /*	++++++++++ Items Graphique ++++++++++ */
 
-	.services_competence .item_ronds {
+	.services_skills .item_circle {
         left: 5.5rem;
 	}
 
-	.services_competence .item_ronds2 {
+	.services_skills .item_circle2 {
         left: 5.3rem;
 	}
 }
@@ -1223,7 +1223,7 @@ form textarea {
 
 	/* ++++++++++  Items Graphiques  ++++++++++ */
 
-	.item_barres {
+	.item_bar {
 		width: 60px;
 	}
 }

@@ -1189,6 +1189,7 @@ form textarea {
 	}
 
 	.pf-projets figure {
+		margin: 1.5rem auto;
 		width: 23%;
 	}
 

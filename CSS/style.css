@@ -12,6 +12,7 @@
 html {
 	font-size: 62.5%;
 }
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -48,12 +49,12 @@ h1 {
 
 h2 {
 	font-size: 1.4rem;
-    color: rgb(0,0,0);
+	color: rgb(0, 0, 0);
 }
 
 h3 {
 	font-size: 1.3rem;
-    color: rgb(0,0,0);
+	color: rgb(0, 0, 0);
 }
 
 h4 {
@@ -82,7 +83,7 @@ ul {
 img {
 	max-width: 100%;
 	height: auto;
-	object-fit: contain;	
+	object-fit: contain;
 }
 
 address {
@@ -182,7 +183,7 @@ address {
 	bottom: 0;
 	left: 0;
 	width: 15%;
-	background-color: rgb(70,150,180);
+	background-color: rgb(70, 150, 180);
 }
 
 h1,
@@ -232,9 +233,9 @@ header a {
 	text-align: center;
 }
 
-.our-services  p {
+.our-services p {
 	width: 90%;
-    text-align: center;
+	text-align: center;
 }
 
 .our-services figure {
@@ -470,7 +471,7 @@ form fieldset {
 fieldset * {
 	margin-bottom: 0.8rem;
 	border-radius: 0.3rem;
-	border: 0.1rem solid rgba(115,115,115, 0.5);
+	border: 0.1rem solid rgba(115, 115, 115, 0.5);
 }
 
 fieldset input:first-child {
@@ -574,7 +575,7 @@ form textarea {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 50%;	
+	border-radius: 50%;
 	width: 1.6rem;
 	height: 1.6rem;
 	background-color: rgb(255, 255, 255);
@@ -620,26 +621,26 @@ form textarea {
 		width: 60%;
 		font-size: 1.8rem;
 	}
-	
+
 	h2 {
 		font-size: 1.6rem;
 	}
-	
+
 	h3 {
 		font-size: 1.5rem;
 	}
-	
+
 	h4 {
 		margin: 0;
 		margin-bottom: 0.3rem;
 		margin-left: 1rem;
 		font-size: 1.2rem;
 	}
-	
+
 	a {
 		font-size: 1.2rem;
 	}
-	
+
 	p {
 		font-size: 1.3rem;
 	}
@@ -650,7 +651,7 @@ form textarea {
 
 	/* ++++++++++  Navigateur  ++++++++++ */
 
-    .nav-head {
+	.nav-head {
 		flex-direction: row;
 		justify-content: space-between;
 		height: 10rem;
@@ -694,7 +695,7 @@ form textarea {
 	}
 
 	.slider-wrapper .fa-angle-right {
-		border-radius:  9.2rem 0 0 9.2rem;
+		border-radius: 9.2rem 0 0 9.2rem;
 		width: 2.3rem;
 		height: 4.6rem;
 	}
@@ -732,7 +733,7 @@ form textarea {
 		width: 90%;
 	}
 
-    .services_skills p {
+	.services_skills p {
 		margin-top: 0;
 	}
 
@@ -745,8 +746,8 @@ form textarea {
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
 
-    .menu label{
-        font-size: 1.3rem;
+	.menu label {
+		font-size: 1.3rem;
 	}
 
 	.pf-projets {
@@ -815,7 +816,7 @@ form textarea {
 		width: 1rem;
 		height: 1rem;
 	}
-	
+
 	.services_skills .item_circle2 {
 		left: 3.2rem;
 		width: 1.6rem;
@@ -834,36 +835,37 @@ form textarea {
 		width: 40rem;
 		font-size: 2rem;
 	}
-	
+
 	h2 {
-        font-size: 1.8rem;
+		font-size: 1.8rem;
 	}
 
 	h3 {
-        font-size: 1.7rem;
+		font-size: 1.7rem;
 	}
 
 	h4 {
-        font-size: 1.6rem;
+		font-size: 1.6rem;
 	}
 
 	a {
-       font-size: 1.3rem;
+		font-size: 1.3rem;
 	}
 
 	p {
-       font-size: 1.4rem;
+		font-size: 1.4rem;
 	}
 
 	/* ++++++++++  NAVIGATEUR  ++++++++++ */
 
-    .nav-head figure {
-        margin-left: 13%;
+	.nav-head figure {
+		margin-left: 13%;
 	}
 
 	.nav-head ul {
 		margin-right: 10rem;
 	}
+
 	/* ++++++++++  HEADER  ++++++++++ */
 
 	.slider-wrapper i {
@@ -890,7 +892,7 @@ form textarea {
 	header a {
 		top: 15rem;
 		left: 13%;
-	}	
+	}
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
@@ -905,7 +907,7 @@ form textarea {
 		width: 30%;
 	}
 
-	.our-services  p {
+	.our-services p {
 		width: 100%;
 	}
 
@@ -922,7 +924,7 @@ form textarea {
 		width: 50%;
 	}
 
-    .services_skills {
+	.services_skills {
 		position: relative;
 	}
 
@@ -931,7 +933,7 @@ form textarea {
 	}
 
 	.services_skills p {
-		width: 50rem;	
+		width: 50rem;
 		text-align: left;
 	}
 
@@ -948,16 +950,16 @@ form textarea {
 		justify-content: space-around;
 	}
 
-    .pf-projets figure {
+	.pf-projets figure {
 		margin: 1.6rem auto;
 	}
 
-    .pf-projets figcaption{
+	.pf-projets figcaption {
 		padding-top: 3%;
 		height: 6rem;
 	}
 
-	.pf-projets i{		
+	.pf-projets i {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -968,13 +970,13 @@ form textarea {
 		width: 4rem;
 		height: 4rem;
 		color: rgb(255, 255, 255);
-		background-color: rgb(70,150,180);
+		background-color: rgb(70, 150, 180);
 		font-size: 1.6rem;
 	}
 
 	/* ++++++++++  CONTACT  ++++++++++ */
 
-    .infos {
+	.infos {
 		height: 48rem;
 	}
 
@@ -983,8 +985,8 @@ form textarea {
 		margin-left: 1.6rem;
 	}
 
-	fieldset input {		
-        height: 1.6rem;
+	fieldset input {
+		height: 1.6rem;
 	}
 
 }
@@ -993,8 +995,8 @@ form textarea {
 
 @media screen and (min-width: 992px) {
 
-    h1 {
-		top:30%;
+	h1 {
+		top: 30%;
 		left: 14%;
 	}
 
@@ -1059,18 +1061,18 @@ form textarea {
 		height: 50rem;
 	}
 
-    form fieldset {
+	form fieldset {
 		height: 37rem;
 	}
 
-/*	++++++++++ Items Graphique ++++++++++ */
+	/*	++++++++++ Items Graphique ++++++++++ */
 
 	.services_skills .item_circle {
-        left: 5.5rem;
+		left: 5.5rem;
 	}
 
 	.services_skills .item_circle2 {
-        left: 5.3rem;
+		left: 5.3rem;
 	}
 }
 
@@ -1078,7 +1080,7 @@ form textarea {
 
 @media screen and (min-width: 1200px) {
 
-    h1 {
+	h1 {
 		top: 23%;
 		left: 16%;
 		width: 65rem;
@@ -1096,7 +1098,7 @@ form textarea {
 
 	/* ++++++++++  NAVIGATEUR  ++++++++++ */
 
-    .nav-head figure {
+	.nav-head figure {
 		margin-left: 16%;
 	}
 
@@ -1107,12 +1109,12 @@ form textarea {
 
 	/* ++++++++++  HEADER  ++++++++++ */
 
-    .slider-wrapper img{
+	.slider-wrapper img {
 		max-width: unset;
 		width: 100%;
 	}
 
-    .slider-wrapper i {
+	.slider-wrapper i {
 		font-size: 2.8rem;
 	}
 
@@ -1150,7 +1152,7 @@ form textarea {
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
 
-    .menu {
+	.menu {
 		width: 100%;
 	}
 
@@ -1164,17 +1166,17 @@ form textarea {
 		padding: 1rem 1.3rem;
 	}
 
-	#all:checked ~ * #selector_all, 
-	#creative:checked ~ * #selector_crea, 
-	#corporate:checked ~ * #selector_corpo, 
-	#portfolio:checked ~ * #selector_pf {
+	#all:checked~* #selector_all,
+	#creative:checked~* #selector_crea,
+	#corporate:checked~* #selector_corpo,
+	#portfolio:checked~* #selector_pf {
 		padding: 1rem 1.3rem;
 	}
 
-	#all:checked ~ * #selector_all i, 
-	#creative:checked ~ * #selector_crea i,
-	#corporate:checked ~ * #selector_corpo i, 
-	#portfolio:checked ~ * #selector_pf i {
+	#all:checked~* #selector_all i,
+	#creative:checked~* #selector_crea i,
+	#corporate:checked~* #selector_corpo i,
+	#portfolio:checked~* #selector_pf i {
 		top: 2.8rem;
 	}
 
@@ -1204,6 +1206,7 @@ form textarea {
 	.infos h2 {
 		font-size: 2.3rem;
 	}
+
 	section fieldset {
 		height: 380px;
 	}

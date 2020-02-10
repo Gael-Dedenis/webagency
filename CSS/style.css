@@ -94,37 +94,40 @@ address {
 
 .nav-head {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	align-items: center;
 	position: sticky;
 	top: 0;
 	left: 0;
 	z-index: 1000;
 	width: 100%;
+	height: 12rem;
 	background-color: rgba(255, 255, 255, 0.9);
-}
-
-.nav-head figure {
-	margin: 1.5rem auto;
 }
 
 .nav-head ul {
 	display: flex;
-	justify-content: space-between;
-	margin: 0 auto;
-	margin-bottom: 1.5rem;
-	width: 70%;
+	justify-content: space-evenly;
+	align-items: stretch;
+	margin-top: 0.7rem;
+	width: 100%;
+	height: 40px;
+}
+
+.nav-head li {
+	padding-bottom: 1.6rem;
+	width: 6rem;
+	text-align: center;
 }
 
 .nav-head a {
-	padding: 0.6rem 0.5rem;
 	text-decoration: none;
 }
 
-.nav-head a:hover,
-.nav-head a:focus,
-.nav-head a:active {
-	border-top: 0.2rem solid rgb(90, 170, 210);
+.nav-head li:hover,
+.nav-head li:focus,
+.nav-head li:active {
+	border-bottom: 0.2rem solid rgb(90, 170, 210);
 	color: rgb(60, 60, 60);
 }
 
@@ -654,27 +657,35 @@ form textarea {
 
 	/* ++++++++++  Navigateur  ++++++++++ */
 
+    .nav-head {
+		flex-direction: row;
+		justify-content: space-between;
+		height: 10rem;
+	}
+
 	.nav-head figure {
-		margin-top: 1.5rem;
-		margin-left: 5%;
-		margin-bottom: 1.5rem;
-		width: 40%;
+		margin: 0;
+		margin-left: 7%;
 	}
 
 	.nav-head ul {
-		justify-content: center;
 		margin: 0;
-		width: 54%;
+		margin-right: 4%;
+		height: 10rem;
+		width: unset;
 	}
 
-	.nav-head a {
-		padding: 3.2rem 0.8rem;
+	.nav-head li {
+		padding-bottom: unset;
+		padding-top: 4.2rem;
 	}
 
-	.nav-head a:hover,
-	.nav-head a:focus,
-	.nav-head a:active {
+	.nav-head li:hover,
+	.nav-head li:focus,
+	.nav-head li:active {
 		border-top: 0.3rem solid rgb(90, 170, 210);
+		border-bottom: unset;
+		padding-top: 3.9rem;
 	}
 
 	/* ++++++++++  Header  ++++++++++ */
@@ -859,11 +870,6 @@ form textarea {
 
 	.nav-head ul {
 		margin-right: 10rem;
-		width: 20rem;
-	}
-
-	.nav-head a {
-		padding: 3.4rem 0.8rem;
 	}
 	/* ++++++++++  HEADER  ++++++++++ */
 
@@ -912,13 +918,14 @@ form textarea {
 
 	.our-services figure {
 		margin: 0;
+		margin-left: -9%;
 		width: 43%;
 	}
 
 	.our-services ul {
 		margin-right: -5%;
 		padding: unset;
-		width: 30%;
+		width: 45%;
 	}
 
     .services_skills {
@@ -932,8 +939,8 @@ form textarea {
 	}
 
 	.services_skills p {		
-		margin-left: 32.5%;
-		text-align: justify;
+		margin-left: 32%;
+		text-align: left;
 	}
 
 	.services_skills i {
@@ -1102,18 +1109,9 @@ form textarea {
 	}
 
 	.nav-head ul {
-		margin-right: 20%;
+		margin-right: 16%;
+		width: 37rem;
 	}
-
-	.nav-head a {
-		padding: 3.4rem 1.6rem;
-	}
-
-	.nav-head a:hover,
-	.nav-head a:focus,
-	.nav-head a:active {
-		border-top: 0.5rem solid rgb(90, 170, 210);
-	}	
 
 	/* ++++++++++  HEADER  ++++++++++ */
 

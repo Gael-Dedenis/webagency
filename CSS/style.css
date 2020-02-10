@@ -165,12 +165,12 @@ address {
 	border-radius: 6.8rem 0 0 6.8rem;
 }
 
-.progresse_barre,
-.progresse_cursor {
+.progress_bar,
+.progress_slider {
 	height: 0.5rem;
 }
 
-.progresse_barre {
+.progress_bar {
 	position: relative;
 	bottom: 0.6rem;
 	left: 0;
@@ -178,7 +178,7 @@ address {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.progresse_cursor {
+.progres_slider {
 	position: absolute;
 	bottom: 0;
 	left: 0;

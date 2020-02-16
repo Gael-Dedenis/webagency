@@ -1,0 +1,21 @@
+{
+    "name": "webagency.gael-dedenis.fr",
+    "version": "0.6.66",
+    "description": "WebAgency : l'agence de tous vos projets ! Vous avez un projet web ?
+    La WebAgency vous aide à le réaliser!",
+    "keywords": [
+        "html5",
+        "css3",
+        "website",
+        "intégration web"
+    ],
+    "license": "MIT",
+    "main": "index.html",
+    "homepage": "https://webagency.gael-dedenis.fr",
+    "repository": "https://github.com/Gael-Dedenis/webagency",
+    "bug": "https://github.com/Gael-Dedenis/webagency/issues",
+    "author": {
+        "name": "Gael Dedenis",
+        "email": "gaeldedenis01@laposte.net"
+    }
+}

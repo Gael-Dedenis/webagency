@@ -40,7 +40,7 @@ header {
 
 h1 {
 	position: absolute;
-	top: 0.5rem;
+	top: 4%;
 	left: 7%;
 	margin: 0;
 	width: 70%;
@@ -249,9 +249,10 @@ header a {
 	align-items: center;
 }
 
-.services_skills h3 {
-	width: 50%;
-	margin-left: 0;
+.services_skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .services_skills i {
@@ -259,7 +260,8 @@ header a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 30%;
+	margin-right: 1.4rem;
+	margin-top: 0.5rem;
 	border: 0.1rem solid rgba(0, 0, 0, 0.15);
 	border-radius: 50%;
 	width: 3rem;
@@ -344,6 +346,16 @@ nav label:focus {
 	color: rgb(255, 255, 255);
 }
 
+nav label:hover i,
+nav label:active i,
+nav label:focus i {
+	display: flex;
+	position: absolute;
+	top: 1.6rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 #all:checked~* #selector_all,
 #creative:checked~* #selector_crea,
 #corporate:checked~* #selector_corpo,
@@ -396,7 +408,7 @@ nav label:focus {
 	width: 100%;
 	height: 4.5rem;
 	font-size: 1rem;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 0, 0, 0.4);
 	color: rgb(255, 255, 255);
 }
 
@@ -407,9 +419,10 @@ nav label:focus {
 .pf-projets p {
 	margin: 0;
 	margin-left: 1rem;
-	width: 80%;
+	margin-bottom: 0.5rem;
 	text-align: left;
 	color: rgb(255, 255, 255);
+	font-size: 1.1rem;
 }
 
 .pf-projets i {
@@ -921,11 +934,13 @@ form textarea {
 		justify-content: stretch;
 		margin: 1rem auto;
 		padding: unset;
-		width: 50%;
+		width: 45%;
 	}
 
 	.services_skills {
 		position: relative;
+		justify-content: unset;
+		width: 80%;
 	}
 
 	.services_skills h3 {
@@ -940,13 +955,13 @@ form textarea {
 	.services_skills i {
 		position: absolute;
 		top: 10%;
-		left: -5rem;
+		left: -6rem;
 	}
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
 
 	.pf-projets {
-		margin: 1.5rem auto;
+		margin: 1.5rem;
 		justify-content: space-around;
 	}
 
@@ -957,6 +972,10 @@ form textarea {
 	.pf-projets figcaption {
 		padding-top: 3%;
 		height: 6rem;
+	}
+
+	.pf-projets p {
+		font-size: 1.3rem;
 	}
 
 	.pf-projets i {
@@ -1034,19 +1053,24 @@ form textarea {
 
 	/* ++++++++++ NOS SERVICES ++++++++++ */
 
+	.services_skills {
+		flex-direction: column;
+		width: 60%;
+	}
+
 	.services_skills i {
-		top: 17%;
-		left: -24rem;
-		width: 6rem;
-		height: 6rem;
+		top: 9%;
+		left: -7rem;
+		width: 5rem;
+		height: 5rem;
 		font-size: 3.2rem;
 	}
 
 	/* ++++++++++  PORTFOLIO  ++++++++++ */
 
 	.pf-projets figure {
-		width: 32%;
-		margin: 0.6rem auto;
+		width: 24%;
+		margin: 0.4rem auto;
 	}
 
 	.pf-projets i {
@@ -1068,11 +1092,11 @@ form textarea {
 	/*	++++++++++ Items Graphique ++++++++++ */
 
 	.services_skills .item_circle {
-		left: 5.5rem;
+		left: 4.4rem;
 	}
 
 	.services_skills .item_circle2 {
-		left: 5.3rem;
+		left: 4.3rem;
 	}
 }
 
@@ -1166,6 +1190,12 @@ form textarea {
 		padding: 1rem 1.3rem;
 	}
 
+	nav label:hover i,
+	nav label:active i,
+	nav label:focus i {
+		top: 2.8rem;
+	}
+
 	#all:checked~* #selector_all,
 	#creative:checked~* #selector_crea,
 	#corporate:checked~* #selector_corpo,
@@ -1189,6 +1219,13 @@ form textarea {
 		height: 23%;
 		padding-top: 7.5%;
 	}
+
+	.pf-projets h4 {
+		margin-top: -1rem;
+		margin-bottom: 0.2rem;
+	}
+
+	.pf-projets p {}
 
 	.pf-projets i {
 		right: 3%;

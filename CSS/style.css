@@ -419,7 +419,6 @@ nav label:focus i {
 .pf-projets p {
 	margin: 0;
 	margin-left: 1rem;
-	margin-bottom: 0.5rem;
 	text-align: left;
 	color: rgb(255, 255, 255);
 	font-size: 1.1rem;
@@ -482,7 +481,7 @@ form fieldset {
 }
 
 fieldset * {
-	margin-bottom: 0.8rem;
+	margin-bottom: 1%;
 	border-radius: 0.3rem;
 	border: 0.1rem solid rgba(115, 115, 115, 0.5);
 }
@@ -510,7 +509,6 @@ fieldset textarea {
 
 form input#envoyer {
 
-	margin-bottom: 1rem;
 	border: unset;
 	border-bottom: 0.3rem solid rgb(70, 150, 180);
 	background-color: rgb(90, 170, 210);
@@ -1221,11 +1219,9 @@ form textarea {
 	}
 
 	.pf-projets h4 {
-		margin-top: -1rem;
-		margin-bottom: 0.2rem;
+		margin-top: -6%;
+		margin-bottom: 2.3%;
 	}
-
-	.pf-projets p {}
 
 	.pf-projets i {
 		right: 3%;
